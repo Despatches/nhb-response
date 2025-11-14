@@ -46,6 +46,18 @@ def create_app():
                 #"lit_exhibit" : True,
             },
             {
+                "label" :"Gate",
+                "id" : "gate",
+                "dynamic" : "sections/gate.jinja",
+                #"lit_exhibit" : True,
+            },
+            {
+                "label" :"Boundaries",
+                "id" : "boundary",
+                "dynamic" : "sections/boundaries.jinja",
+                #"lit_exhibit" : True,
+            },
+            {
                 "label" :"Dumped Garden Waste",
                 "id" : "dumped",
                 "dynamic" : "sections/dumped.jinja",
