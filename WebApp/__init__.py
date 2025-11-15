@@ -40,6 +40,12 @@ def create_app():
                 ]
             },
             {
+                "label" :"fhouse_title_facts",
+                "id" : "fhouse_title_facts",
+                "dynamic" : "sections/fhouse_title_facts.jinja",
+                #"lit_exhibit" : True,
+            },
+            {
                 "label" :"Boundaries",
                 "id" : "boundary",
                 "dynamic" : "sections/boundaries.jinja",
