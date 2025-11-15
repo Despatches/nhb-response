@@ -43,6 +43,12 @@ def create_app():
                         "dynamic" : "sections/fhouse_title_facts.jinja",
                         #"lit_exhibit" : True,
                     },
+                    {
+                        "label" :"litigation_motive",
+                        "id" : "litigation_motive",
+                        "dynamic" : "sections/litigation_motive.jinja",
+                        #"lit_exhibit" : True,
+                    },
                 ]
             },
             {
