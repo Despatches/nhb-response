@@ -38,13 +38,13 @@ def create_app():
                     },
                     {"id": "intro_sub2", "label": "Purpose"},
                      {
-                        "label" :"fhouse_title_facts",
+                        "label" :"Farmhouse Title Facts",
                         "id" : "fhouse_title_facts",
                         "dynamic" : "sections/fhouse_title_facts.jinja",
                         #"lit_exhibit" : True,
                     },
                     {
-                        "label" :"litigation_motive",
+                        "label" :"NHB Litigation Motive",
                         "id" : "litigation_motive",
                         "dynamic" : "sections/litigation_motive.jinja",
                         #"lit_exhibit" : True,
