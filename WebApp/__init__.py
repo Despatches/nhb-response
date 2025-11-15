@@ -36,14 +36,14 @@ def create_app():
                     {
                         "id": "intro_sub1", "label": "Background","dynamic" : "sections/background.jinja",
                     },
-                    {"id": "intro_sub2", "label": "Purpose"}
+                    {"id": "intro_sub2", "label": "Purpose"},
+                     {
+                        "label" :"fhouse_title_facts",
+                        "id" : "fhouse_title_facts",
+                        "dynamic" : "sections/fhouse_title_facts.jinja",
+                        #"lit_exhibit" : True,
+                    },
                 ]
-            },
-            {
-                "label" :"fhouse_title_facts",
-                "id" : "fhouse_title_facts",
-                "dynamic" : "sections/fhouse_title_facts.jinja",
-                #"lit_exhibit" : True,
             },
             {
                 "label" :"Boundaries",
