@@ -64,7 +64,7 @@ def create_app():
                 #"lit_exhibit" : True,
             },
             {
-                "label" :"Farmhouse Neglect",
+                "label" :"Neglect",
                 "id" : "neglect",
                 "dynamic" : "sections/neglect.jinja",
                 #"lit_exhibit" : True,
