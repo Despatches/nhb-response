@@ -36,11 +36,32 @@ def create_app():
                     {
                         "id": "intro_sub1", "label": "Background","dynamic" : "sections/background.jinja",
                     },
+                    {"id": "intro_sub2", "label": "Purpose"},
+                     {
+                        "label" :"Farmhouse Title Facts",
+                        "id" : "fhouse_title_facts",
+                        "dynamic" : "sections/fhouse_title_facts.jinja",
+                        #"lit_exhibit" : True,
+                    },
                     {
-                        "id": "intro_sub2",
-                        "label": "Purpose"
-                    }
+                        "label" :"NHB Litigation Motive",
+                        "id" : "litigation_motive",
+                        "dynamic" : "sections/litigation_motive.jinja",
+                        #"lit_exhibit" : True,
+                    },
                 ]
+            },
+            {
+                "label" :"Boundaries",
+                "id" : "boundary",
+                "dynamic" : "sections/boundaries.jinja",
+                #"lit_exhibit" : True,
+            },
+            {
+                "label" :"Gate",
+                "id" : "gate",
+                "dynamic" : "sections/gate.jinja",
+                #"lit_exhibit" : True,
             },
             {
                 "label" :"Boundaries",
@@ -52,6 +73,12 @@ def create_app():
                 "label" :"Dumped Garden Waste",
                 "id" : "dumped",
                 "dynamic" : "sections/dumped.jinja",
+                #"lit_exhibit" : True,
+            },
+            {
+                "label" :"Neglect",
+                "id" : "neglect",
+                "dynamic" : "sections/neglect.jinja",
                 #"lit_exhibit" : True,
             },
             {
