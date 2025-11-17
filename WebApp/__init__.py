@@ -3,6 +3,7 @@ import os
 from flask import Flask, render_template
 
 from .config import Config
+from .shorthand import shorts as shorthand_names
 
 
 def create_app():
@@ -108,7 +109,23 @@ def create_app():
                 "subsections": []
             }
         ]
-        return render_template('intro.html', components=components, deeds = 'images/deeds/',claim_letter = 'images/nhb_claim_letter/', claim_images = 'images/nhb_claim_images/',marketing = 'images/FFH_marketing_photos/', diagrams = 'images/general_diagrams/')
+        return render_template(
+            'intro.html', 
+            components=components, 
+            deeds = 'images/deeds/',
+            claim_letter = 'images/nhb_claim_letter/', 
+            claim_images = 'images/nhb_claim_images/',
+            marketing = 'images/FFH_marketing_photos/', 
+            diagrams = 'images/general_diagrams/',
+            MM = "Mansell Mctaggart",
+            FFH = "Furnace Farm House",
+            FFHO = "Furnace Farmhouse Owner",
+            MMAM = "Momentum Asset Management",
+            NHB = "NHB Investments Limited",
+            NatHB= "National Homebuyers",
+            FF = "Furnace Farm",
+            OH = "Oliver Hume",
+            EH = "Edward Hume",)
 
     @app.route('/')
     def hello():
