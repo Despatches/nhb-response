@@ -51,6 +51,12 @@ def create_app():
                     },
                 ]
             },
+             {
+                "label" :"NHB Disclosure",
+                "id" : "disclosure_nhb",
+                "dynamic" : "sections/disclosure_nhb.jinja",
+                #"lit_exhibit" : True,
+            },
             {
                 "label" :"Boundaries",
                 "id" : "boundary",
