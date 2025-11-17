@@ -1,4 +1,79 @@
+{% macro oscola_citation(
+    authors=None,
+    title=None,
+    year=None,
+    court=None,
+    neutral_citation=None,
+    reporter=None,
+    volume=None,
+    page=None,
+    url=None,
+    access_date=None,
+    doc_type="case"   # "case" or "article" or "report"
+) %}
+    <span class="oscola-citation">
 
+        {# --- Authors / Parties --- #}
+        {% if authors %}
+            <span class="oscola-authors">{{ authors }}</span>
+        {% endif %}
+
+        {# --- Case title or Article title --- #}
+        {% if title %}
+            {% if doc_type == "case" %}
+                <span class="oscola-title"><i>{{ title }}</i></span>
+            {% else %}
+                <span class="oscola-title">‘{{ title }}’</span>
+            {% endif %}
+        {% endif %}
+
+        {# --- Year --- #}
+        {% if year %}
+            <span class="oscola-year">({{ year }})</span>
+        {% endif %}
+
+        {# --- Neutral citation (e.g. [2019] UKSC 12) --- #}
+        {% if neutral_citation %}
+            <span class="oscola-neutral">{{ neutral_citation }}</span>
+        {% endif %}
+
+        {# --- Reporter info --- #}
+        {% if reporter %}
+            <span class="oscola-reporter">
+                {% if volume %}{{ volume }} {% endif %}
+                {{ reporter }}
+                {% if page %} {{ page }}{% endif %}
+            </span>
+        {% endif %}
+
+        {# --- Court (if not already in neutral citation) --- #}
+        {% if court %}
+            <span class="oscola-court">({{ court }})</span>
+        {% endif %}
+
+        {# --- URL + Access date --- #}
+        {% if url %}
+            <span class="oscola-url">
+                &lt;<a href="{{ url }}">{{ url }}</a>&gt;
+            </span>
+        {% endif %}
+        {% if access_date %}
+            <span class="oscola-access">accessed {{ access_date }}</span>
+        {% endif %}
+    </span>
+{% endmacro %}
+
+{# ---
+Example use
+{{ oscola_citation(
+    authors="R v Smith",
+    title="Smith",
+    neutral_citation="[2020] EWCA Crim 100",
+    court="CA",
+    url="https://www.bailii.org/ew/cases/EWCA/Crim/2020/100.html",
+    access_date="12 November 2025"
+) }}
+ --- #}
 
 <!DOCTYPE html>
 <html lang="en">

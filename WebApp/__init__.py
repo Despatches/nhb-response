@@ -117,16 +117,22 @@ def create_app():
             claim_images = 'images/nhb_claim_images/',
             marketing = 'images/FFH_marketing_photos/', 
             diagrams = 'images/general_diagrams/',
-            MM = "Mansell Mctaggart",
-            FFH = "Furnace Farm House",
+            MM = "<b>Mansell Mctaggart Estate Agents</b>",
+            FFH = "<b>Furnace Farm House</b>",
             FFHO = "Furnace Farmhouse Owner",
             MMAM = "Momentum Asset Management",
             NHB = "NHB Investments Limited",
-            NatHB= "National Homebuyers",
+            NatHB = "National Homebuyers",
             FF = "Furnace Farm",
             OH = "Oliver Hume",
-            EH = "Edward Hume",)
-
+            EH = "Edward Hume",
+            DOC = "Duty of Care",
+            MI = "Material Information",
+            BMPA = "Barnard Marcus Property Auctioneers",
+            UPB = "usnverified viewing Prospect",
+            OPB = "<b>Onboarded verified viewing prospect</b>",
+            FBAG = "'Anything Goudhurst. Information, Buy & Sell, Jobs' facebook page",
+        );
     @app.route('/')
     def hello():
         return render_template('intro.html')
