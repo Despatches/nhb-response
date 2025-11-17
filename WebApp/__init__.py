@@ -104,6 +104,12 @@ def create_app():
                 "subsections": []
             },
             {
+                "id": "social_media_response",
+                "label": "Social Media Campaign",
+                "subsections": [],
+                "dynamic" : "sections/social_media_response.jinja",
+            },
+            {
                 "id": "conclusion",
                 "label": "Conclusion",
                 "subsections": []
