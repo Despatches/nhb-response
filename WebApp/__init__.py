@@ -138,12 +138,14 @@ def create_app():
             FF = "Furnace Farm",
             OH = "Oliver Hume",
             EH = "Edward Hume",
-            DOC = "Duty of Care",
             MI = "Material Information",
             BMPA = "Barnard Marcus Property Auctioneers",
             UPB = "usnverified viewing Prospect",
             OPB = "<b>Onboarded verified viewing prospect</b>",
             FBAG = "'Anything Goudhurst. Information, Buy & Sell, Jobs' facebook page",
+            LegalTerm = {
+                "DOC" : "Duty of Care",
+            }
         );
     @app.route('/')
     def hello():
