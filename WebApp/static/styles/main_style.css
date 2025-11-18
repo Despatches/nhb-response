@@ -30,6 +30,7 @@ body {
     box-shadow: 2px 0 12px rgba(0,0,0,0.1);
 }
 
+
 .sidebar h2 {
     font-size: 1.4em;
     font-weight: 600;
@@ -262,4 +263,76 @@ figure figcaption {
         flex-direction: column;
     }
 }
+
+/* --- OSCOLA citation styling --- */
+.oscola-citation {
+    display: block;
+    margin: 12px 0;
+    padding: 12px 16px;
+    background: #ffffff;
+    border-left: 4px solid #1abc9c;       /* subtle accent to match sidebar */
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    font-size: 0.96em;
+    line-height: 1.55;
+    color: #2c3e50;
+}
+
+/* Element-level subtle differences */
+.oscola-authors {
+    font-weight: 600;
+    margin-right: 4px;
+}
+
+.oscola-title i {
+    font-style: italic;
+}
+
+.oscola-title {
+    margin-right: 4px;
+}
+
+/* Year / neutral citation / pinpoints */
+.oscola-year,
+.oscola-neutral,
+.oscola-reporter,
+.oscola-court {
+    margin-right: 4px;
+    color: #34495e;
+}
+
+/* URL */
+.oscola-url {
+    margin-left: 6px;
+    color: #1abc9c;
+}
+s
+.oscola-url a {
+    color: #1abc9c;
+    text-decoration: none;
+    border-bottom: 1px dotted #1abc9c;
+}
+
+.oscola-url a:hover {
+    color: #16a085;
+    border-bottom-color: #16a085;
+}
+
+/* Access date */
+.oscola-access {
+    color: #7f8c8d;
+    margin-left: 4px;
+    font-size: 0.9em;
+}
+
+/* --- Optional: inline citation variant --- */
+.oscola-citation.inline {
+    display: inline;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    background: none;
+    border-radius: 0;
+}
+
 
