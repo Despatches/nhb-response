@@ -65,17 +65,25 @@ def create_app():
                 #"lit_exhibit" : True,
             },
             {
-                "label" :"Gate",
-                "id" : "gate",
-                "dynamic" : "sections/gate.jinja",
-                #"lit_exhibit" : True,
-            },
-            {
                 "label" :"Boundaries",
                 "id" : "boundary",
                 "dynamic" : "sections/boundaries.jinja",
                 #"lit_exhibit" : True,
             },
+            {
+                "label" :"General Tresspass and nuissnace",
+                "id" : "general_trespass",
+                "dynamic" : "sections/general_trespass.jinja",
+                 "subsections": [
+                    {
+                        "label" :"Gate",
+                        "id" : "gate",
+                        "dynamic" : "sections/gate.jinja",
+                        #"lit_exhibit" : True,
+                    },
+                 ]
+                #"lit_exhibit" : True,
+            },            
             {
                 "label" :"Dumped Garden Waste",
                 "id" : "dumped",
