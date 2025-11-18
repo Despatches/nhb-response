@@ -335,4 +335,83 @@ s
     border-radius: 0;
 }
 
+/* --- Legal Document Block --- */
+.legal-block {
+    background: #ffffff;
+    padding: 40px 45px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    margin: 40px 0;
+    font-size: 1.02em;
+    line-height: 1.75;
+    color: #2c3e50;
+}
+
+/* Section Headings */
+.legal-section-heading {
+    margin-top: 2.2em;
+    margin-bottom: 0.8em;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #2c3e50;
+    border-left: 5px solid #1abc9c;
+    padding-left: 12px;
+}
+
+/* Clause container using flex layout */
+.legal-clause {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    background: #fdfdfd;
+    border: 1px solid #e1e4e8;
+    border-left: 4px solid #bdc3c7;
+    padding: 20px;
+    margin: 22px 0;
+    border-radius: 6px;
+}
+
+/* Fixed-width reference column */
+.legal-clause-ref {
+    flex: 0 0 55px;                /* prevents shrinking, ensures exact alignment */
+    font-weight: 700;
+    color: #7f8c8d;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: #ecf0f1;
+    border: 1px solid #d5d8dc;
+    text-align: center;
+}
+
+/* Paragraph typography inside legal areas */
+.legal-block p {
+    margin-bottom: 1.2em;
+    font-family: "Georgia", "Times New Roman", serif;
+    color: #2c3e50;
+    font-size: 1em;
+}
+
+/* Headings inside legal-block use your normal sans-serif */
+.legal-block h1,
+.legal-block h2,
+.legal-block h3 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Optional: highlight clause on hover */
+.legal-clause:hover {
+    background: #fcfcfc;
+    border-left-color: #1abc9c;
+    transition: 0.2s;
+}
+
+/* Clause text area grows naturally */
+.legal-clause p {
+    flex: 1;
+    margin: 0;
+}
+
 
