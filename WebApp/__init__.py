@@ -40,8 +40,8 @@ def create_app():
                     {"id": "intro_sub2", "label": "Purpose"},
                      {
                         "label" :"Farmhouse Title Facts",
-                        "id" : "fhouse_title_facts",
-                        "dynamic" : "sections/fhouse_title_facts.jinja",
+                        "id" : "FFHOuse_title_facts",
+                        "dynamic" : "sections/FFHOuse_title_facts.jinja",
                         #"lit_exhibit" : True,
                     },
                     {
@@ -138,7 +138,7 @@ def create_app():
             diagrams = 'images/general_diagrams/',
             MM = "<b>Mansell Mctaggart Estate Agents</b>",
             FFH = "<b>Furnace Farm House</b>",
-            FFHO = "Furnace Farmhouse Owner",
+            FFHO = "Furnace Farmhouse Owner or Occupier",
             MMAM = "<b>Momentum Asset Management</b>",
             NHB = "<b>NHB Investments Limited</b>",
             NatHB = "<b>National Homebuyers</b>",
