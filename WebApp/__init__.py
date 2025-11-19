@@ -138,7 +138,7 @@ def create_app():
             diagrams = 'images/general_diagrams/',
             MM = "<b>Mansell Mctaggart Estate Agents</b>",
             FFH = "<b>Furnace Farm House</b>",
-            FFHO = "Furnace Farmhouse Owner or Occupier",
+            FFHO = "<b> Furnace Farmhouse Owner or Occupier</b>",
             MMAM = "<b>Momentum Asset Management</b>",
             NHB = "<b>NHB Investments Limited</b>",
             NatHB = "<b>National Homebuyers</b>",
