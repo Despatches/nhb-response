@@ -41,7 +41,7 @@ def create_app():
                      {
                         "label" :"Farmhouse Title Facts",
                         "id" : "fhouse_title_facts",
-                        "dynamic" : "sections/FFHOuse_title_facts.jinja",
+                        "dynamic" : "sections/fhouse_title_facts.jinja",
                         #"lit_exhibit" : True,
                     },
                     {
