@@ -40,7 +40,7 @@ def create_app():
                     {"id": "intro_sub2", "label": "Purpose"},
                      {
                         "label" :"Farmhouse Title Facts",
-                        "id" : "FFHOuse_title_facts",
+                        "id" : "fhouse_title_facts",
                         "dynamic" : "sections/FFHOuse_title_facts.jinja",
                         #"lit_exhibit" : True,
                     },
