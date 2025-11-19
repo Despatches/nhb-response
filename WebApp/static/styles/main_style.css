@@ -415,3 +415,113 @@ s
 }
 
 
+/* --- Exhibit Section Block --- */
+.exhibit-block {
+    background: #ffffff;
+    padding: 40px 45px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    margin: 60px 0;
+}
+
+/* Heading */
+.exhibit-heading {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1em;
+    border-left: 5px solid #1abc9c;
+    padding-left: 12px;
+}
+
+/* Each Exhibit container */
+.exhibit-item {
+    display: flex;
+    gap: 20px;
+
+    background: #fdfdfd;
+    border: 1px solid #e1e4e8;
+    border-left: 4px solid #bdc3c7;
+    padding: 20px;
+    margin: 28px 0;
+    border-radius: 6px;
+}
+
+/* Exhibit reference badge (E-1, E-2...) */
+.exhibit-ref {
+    flex: 0 0 55px;
+    font-weight: 700;
+    color: #7f8c8d;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: #ecf0f1;
+    border: 1px solid #d5d8dc;
+    text-align: center;
+}
+
+/* Body (image + caption) */
+.exhibit-body figure {
+    margin: 0;
+}
+
+.exhibit-body img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+.exhibit-body figcaption {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 6px;
+}
+/* Ensures each exhibit appears on its own printed page */
+@media print {
+
+    .exhibit-item {
+        page-break-before: always;
+        page-break-after: always;
+    }
+
+    /* Ensure content fits nicely on a PDF page */
+    .exhibit-item {
+        padding: 20mm;
+        box-sizing: border-box;
+    }
+
+    /* Scale large images to fit the printable page width */
+    .exhibit-body img {
+        max-width: 170mm;   /* fits A4 width with margins */
+        max-height: 240mm;  /* fits A4 height with margins */
+        width: auto;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* Remove unnecessary shadows, borders, or colors in print */
+    .exhibit-item,
+    .exhibit-block {
+        box-shadow: none !important;
+        border: none !important;
+    }
+
+    /* Remove background colours that may print poorly */
+    .exhibit-item,
+    .exhibit-ref,
+    .exhibit-block {
+        background: white !important;
+    }
+
+    /* Fix margins for PDF printing */
+    body {
+        margin: 0;
+    }
+}
+
+
+
