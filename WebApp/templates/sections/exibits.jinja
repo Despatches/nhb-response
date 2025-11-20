@@ -1,0 +1,73 @@
+<div class="exhibit-block" id="exhibits">
+
+    <h2 class="exhibit-heading">Exhibits</h2>
+
+    {% set letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o'] %}
+
+    {% for letter in letters %}
+        <div class="exhibit-item exhibit-print-page" id="NHBE-{{ letter }}">
+            <div class="exhibit-ref">NHBE-{{ letter }}</div>
+
+            <div class="exhibit-body">
+                <figure>
+                    <img src="{{ url_for('static', filename=claim_images + 'nhbe-' ~ letter ~ '.png') }}"
+                         alt="Exhibit NHBE-{{ letter }}">
+                    <figcaption>
+                        Exhibit NHBE-{{ letter }} — description goes here.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    {% endfor %}
+
+</div>
+
+<div class="exhibit-block" id="exhibits">
+
+    <h2 class="exhibit-heading">NHB images Exhibits Gridded</h2>
+
+    {% set letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o'] %}
+
+    {% for letter in letters %}
+        {% set exhibit_name =  "NHBE-"+ letter +"-gridded"%}
+        <div class="exhibit-item exhibit-print-page" id={{exhibit_name}}>
+            <div class="exhibit-ref">{{exhibit_name}}</div>
+
+            <div class="exhibit-body">
+                <figure>
+
+                    <div class="grid-wrapper">
+                        <!-- X-axis labels A–J -->
+                        <div class="grid-labels-x">
+                            {% for col in ['A','B','C','D','E','F','G','H','I','J'] %}
+                                <span>{{ col }}</span>
+                            {% endfor %}
+                        </div>
+
+                        <img src="{{ url_for('static', filename=claim_images + 'nhbe-' ~ letter ~ '.png') }}"
+                             alt="Exhibit NHBE-{{ letter }}">
+                        
+
+                        <!-- Y-axis labels 1–10 -->
+                        <div class="grid-labels-y">
+                            {% for row in range(1,11) %}
+                                <span style = "border-width: 3;">
+                                {{ row }}
+                            </span>
+                            {% endfor %}
+                        </div>
+
+                        <!-- Grid lines -->
+                        <div class="grid-overlay"></div>
+                    </div>
+
+                    <figcaption>
+                        Exhibit NHBE-{{ letter }} — description goes here.
+                    </figcaption>
+
+                </figure>
+            </div>
+        </div>
+    {% endfor %}
+
+</div>

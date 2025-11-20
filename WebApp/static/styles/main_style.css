@@ -415,3 +415,190 @@ s
 }
 
 
+/* --- Exhibit Section Block --- */
+.exhibit-block {
+    background: #ffffff;
+    padding: 40px 45px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    margin: 60px 0;
+}
+
+/* Heading */
+.exhibit-heading {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1em;
+    border-left: 5px solid #1abc9c;
+    padding-left: 12px;
+}
+
+/* Each Exhibit container */
+.exhibit-item {
+    display: flex;
+    gap: 20px;
+
+    background: #fdfdfd;
+    border: 1px solid #e1e4e8;
+    border-left: 4px solid #bdc3c7;
+    padding: 20px;
+    margin: 28px 0;
+    border-radius: 6px;
+}
+
+/* Exhibit reference badge (E-1, E-2...) */
+.exhibit-ref {
+    flex: 0 0 55px;
+    font-weight: 700;
+    color: #7f8c8d;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: #ecf0f1;
+    border: 1px solid #d5d8dc;
+    text-align: center;
+}
+
+/* Body (image + caption) */
+.exhibit-body figure {
+    margin: 0;
+}
+
+.exhibit-body img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+.exhibit-body figcaption {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 6px;
+}
+/* Ensures each exhibit appears on its own printed page */
+@media print {
+
+    .exhibit-item {
+        page-break-before: always;
+        page-break-after: always;
+    }
+
+    /* Ensure content fits nicely on a PDF page */
+    .exhibit-item {
+        padding: 20mm;
+        box-sizing: border-box;
+    }
+
+    /* Scale large images to fit the printable page width */
+    .exhibit-body img {
+        max-width: 170mm;   /* fits A4 width with margins */
+        max-height: 240mm;  /* fits A4 height with margins */
+        width: auto;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* Remove unnecessary shadows, borders, or colors in print */
+    .exhibit-item,
+    .exhibit-block {
+        box-shadow: none !important;
+        border: none !important;
+    }
+
+    /* Remove background colours that may print poorly */
+    .exhibit-item,
+    .exhibit-ref,
+    .exhibit-block {
+        background: white !important;
+    }
+
+    /* Fix margins for PDF printing */
+    body {
+        margin: 0;
+    }
+}
+
+
+/* --- GRID OVERLAY SYSTEM --- */
+
+.grid-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Ensure the image fills the wrapper */
+.grid-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Horizontal (X-axis) labels A–J */
+.grid-labels-x {
+    position: absolute;
+    top: -22px;         /* moves labels below the image */
+    left: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+}
+
+/* Vertical (Y-axis) labels 1–10 */
+.grid-labels-y {
+    position: absolute;
+    top: 0;
+    left: -28px;          /* moves labels to the left of image */
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    align-items: center;
+    text-align: right;
+    font-size: 12px;
+    color: #555;
+}
+
+/* The actual 10×10 grid */
+.grid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-image:
+        /* vertical grid lines */
+        linear-gradient(to right, rgba(0,0,0,0.4) 3px, transparent 1px),
+        /* horizontal grid lines */
+        linear-gradient(to bottom, rgba(0,0,0,0.4) 3px, transparent 1px);
+
+    background-size:
+        calc(100% / 10) 100%,     /* 10 vertical divisions */
+        100% calc(100% / 10);     /* 10 horizontal divisions */
+
+    pointer-events: none;         /* ensures clicks go to the image */
+}
+
+/* Improve print appearance */
+@media print {
+    .grid-labels-x, .grid-labels-y {
+        color: #000;
+        font-size: 10pt;
+    }
+
+    .grid-overlay {
+        background-image:
+            linear-gradient(to right, rgba(0,0,0,0.4) 3px, transparent 1px),
+            linear-gradient(to bottom, rgba(0,0,0,0.4) 3px, transparent 1px);
+    }
+}
+
+
