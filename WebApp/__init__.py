@@ -68,6 +68,32 @@ def create_app():
                 "label" :"Abandoned and Waste Materials",
                 "id" : "abandonment_and_waste",
                 "dynamic" : "sections/abandonment_and_waste.jinja",
+                "subsections": [
+                    {
+                        "label" :"analysis of Exhibit NHBE-a",
+                        "id" : "exhibit-NHBE-a",
+                        "dynamic" : "sections/exhibit_analysis/exhibit-NHBE-a.jinja",
+                        #"lit_exhibit" : True,
+                    },   
+                    {
+                        "label" :"analysis of Exhibit NHBE-b",
+                        "id" : "exhibit-NHBE-b",
+                        "dynamic" : "sections/exhibit_analysis/exhibit-NHBE-b.jinja",
+                        #"lit_exhibit" : True,
+                    }, 
+                    {
+                        "label" :"analysis of Exhibit NHBE-c",
+                        "id" : "exhibit-NHBE-c",
+                        "dynamic" : "sections/exhibit_analysis/exhibit-NHBE-c.jinja",
+                        #"lit_exhibit" : True,
+                    },  
+                    {
+                        "label" :"analysis of Exhibit NHBE-d",
+                        "id" : "exhibit-NHBE-d",
+                        "dynamic" : "sections/exhibit_analysis/exhibit-NHBE-d.jinja",
+                        #"lit_exhibit" : True,
+                    },               
+                ]
             },
             {
                 "label" :"General Tresspass and nuissnace",
