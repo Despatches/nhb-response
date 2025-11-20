@@ -596,8 +596,8 @@ s
 
     .grid-overlay {
         background-image:
-            linear-gradient(to right, rgba(0,0,0,0.6) 4px, transparent 4px),
-            linear-gradient(to bottom, rgba(0,0,0,0.6) 4px, transparent 4px);
+            linear-gradient(to right, rgba(0,0,0,0.4) 3px, transparent 1px),
+            linear-gradient(to bottom, rgba(0,0,0,0.4) 3px, transparent 1px);
     }
 }
 
