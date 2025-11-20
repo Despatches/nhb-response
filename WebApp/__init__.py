@@ -134,6 +134,13 @@ def create_app():
                 "dynamic" : "sections/exibits.jinja",
             }
         ]
+
+        tables = {
+            "my_table" : [
+                [],
+                []
+            ]
+        }
         return render_template(
             'intro.html', 
             components=components, 
@@ -159,6 +166,7 @@ def create_app():
             LegalTerm = {
                 "DOC" : "Duty of Care",
             }
+
         );
     @app.route('/')
     def hello():
