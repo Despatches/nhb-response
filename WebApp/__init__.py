@@ -126,6 +126,12 @@ def create_app():
                 "id": "conclusion",
                 "label": "Conclusion",
                 "subsections": []
+            },
+            {
+                "id": "exibits",
+                "label": "Exibits",
+                "subsections": [],
+                "dynamic" : "sections/exibits.jinja",
             }
         ]
         return render_template(

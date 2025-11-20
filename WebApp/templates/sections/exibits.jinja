@@ -1,0 +1,23 @@
+<div class="exhibit-block" id="exhibits">
+
+    <h2 class="exhibit-heading">Exhibits</h2>
+
+    {% set letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o'] %}
+
+    {% for letter in letters %}
+        <div class="exhibit-item exhibit-print-page" id="NHBE-{{ letter }}">
+            <div class="exhibit-ref">NHBE-{{ letter }}</div>
+
+            <div class="exhibit-body">
+                <figure>
+                    <img src="{{ url_for('static', filename=claim_images + 'nhbe-' ~ letter ~ '.png') }}"
+                         alt="Exhibit NHBE-{{ letter }}">
+                    <figcaption>
+                        Exhibit NHBE-{{ letter }} — description goes here.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    {% endfor %}
+
+</div>
