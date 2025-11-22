@@ -1,3 +1,57 @@
+{% macro risk_itinerary(
+    figure_ref = None,
+    Item_spec = None,
+    grid_ref = None
+) %}
+        It is unclear how the IBC is causing a public health and safety risk.
+        {{figure_ref}} identifying the item {{Item_spec}} located at {{grid_ref}} fails to specify : 
+        <ol>
+            <li>
+                nature of risk
+            </li>
+            <li>
+                severity of risk
+            </li>
+            <li>
+                statutory instrument or HSE reference to specified risks
+            </li>
+        </ol>
+{% endmacro %}
+
+{% macro text_quotation(
+    quote_text = "",
+    quote_reference = ""
+)%}
+
+    <div id="{{ quote_reference }}" class="legal-clause">
+        <div class="legal-clause-ref">{{ quote_reference }}</div>
+        <p>
+            {{quote_text}}
+        </p>
+    </div>
+
+{% endmacro %}
+
+{% macro line_by_line_text_quotation(
+    quote_text = [],
+    first_line_number = 1,
+    quote_reference = ""
+)%}
+    {% set line_number = 0%}
+    <div id="{{ quote_reference }}" class="legal-clause">
+        <div class="legal-clause-ref">{{ quote_reference }}</div>
+        <div>
+            {%for line in quote_text %} 
+                <p><i>[{{first_line_number + line_number}}]</i>
+                   {{line}}</p>
+                <br>
+                {% set line_number = line_number+1%}
+            {% endfor %}
+        </div>
+    </div>
+
+{% endmacro %}
+
 {% macro oscola_citation(
     authors=None,
     title=None,
