@@ -37,15 +37,15 @@
     first_line_number = 1,
     quote_reference = ""
 )%}
-    {% set line_number = 0 %}
+    {% set ns = namespace(line_number=1) %}
     <div id="{{ quote_reference }}" class="legal-clause">
         <div class="legal-clause-ref">{{ quote_reference }}</div>
         <div>
             {% for line in quote_text %} 
-                <p><i>[{{first_line_number + line_number}}]</i>
+                <p><i>[{{first_line_number + ns.line_number}}]</i>
                    {{line}}</p>
                 <br>
-                
+                 {% set ns.line_number = ns.line_number + 1 %}
             {% endfor %}
         </div>
     </div>
