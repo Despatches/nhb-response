@@ -1,0 +1,16 @@
+{% macro question_table(table_data, table_heading = "Facts to be Established") %}
+
+	<caption>{{ table_heading }}</caption>
+	<table>
+	{% for question in  table_data%}
+		<tr>
+			<td>
+				{{ question.context }}
+			</td>
+			<td>
+				{{ question.text }}
+			</td>
+		</tr>
+	{% endfor %}
+	</table>
+{% endmacro %}
