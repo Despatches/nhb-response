@@ -96,7 +96,7 @@ def create_app():
                 ]
             },
             {
-                "label" :"General Tresspass and nuissnace",
+                "label" :"General trespass and nuisance",
                 "id" : "general_trespass",
                 "dynamic" : "sections/general_trespass.jinja",
                  "subsections": [
@@ -147,6 +147,12 @@ def create_app():
                 "label": "Social Media Campaign",
                 "subsections": [],
                 "dynamic" : "sections/social_media_response.jinja",
+            },
+            {
+                "label" :"property value",
+                "id" : "property-value",
+                "dynamic" : "sections/property_value.jinja",
+                #"lit_exhibit" : True,
             },
             {
                 "id": "conclusion",
