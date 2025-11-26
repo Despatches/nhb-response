@@ -149,10 +149,9 @@ def create_app():
                 "dynamic" : "sections/social_media_response.jinja",
             },
             {
+                "id" : "property_value",
                 "label" :"property value",
-                "id" : "property-value",
                 "dynamic" : "sections/property_value.jinja",
-                #"lit_exhibit" : True,
             },
             {
                 "id": "conclusion",
