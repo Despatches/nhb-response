@@ -163,6 +163,13 @@ def create_app():
                 "label": "Exibits",
                 "subsections": [],
                 "dynamic" : "sections/exibits.jinja",
+                "subsections": [
+                    {
+                        "id" : "letter_exibits",
+                        "label" :"Corespondence Exhibits",
+                        "dynamic" : "sections/letter_exhibits.jinja",                    
+                    }
+                ]
             }
         ]
 
@@ -202,6 +209,33 @@ def create_app():
     @app.route('/')
     def hello():
         return render_template('intro.html')
+
+    @app.route('/letter')
+    def renderletter():
+        return render_template('letters/odt_nhb.27_nov_2025.adr.html',
+            deeds = 'images/deeds/',
+            claim_letter = 'images/nhb_claim_letter/', 
+            claim_images = 'images/nhb_claim_images/',
+            marketing = 'images/FFH_marketing_photos/', 
+            diagrams = 'images/general_diagrams/',
+            MM = "<b>Mansell Mctaggart Estate Agents</b>",
+            FFH = "<b>Furnace Farm House</b>",
+            FFHO = "<b> Furnace Farmhouse Owner or Occupier</b>",
+            MMAM = "<b>Momentum Asset Management</b>",
+            NHB = "<b>NHB Investments Limited</b>",
+            NatHB = "<b>National Homebuyers</b>",
+            FF = "Furnace Farm",
+            OH = "Oliver Hume",
+            EH = "Edward Hume",
+            MI = "Material Information",
+            BMPA = "Barnard Marcus Property Auctioneers",
+            UPB = "usnverified viewing Prospect",
+            OPB = "<b>Onboarded verified viewing prospect</b>",
+            FBAG = "'Anything Goudhurst. Information, Buy & Sell, Jobs' facebook page",
+            LegalTerm = {
+                "DOC" : "Duty of Care",
+            })
+
 
     @app.errorhandler(404)
     def page_not_found(e):
