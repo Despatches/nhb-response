@@ -154,6 +154,11 @@ def create_app():
                 "dynamic" : "sections/property_value.jinja",
             },
             {
+                "id": "pollution_risks",
+                "label": "Pollution Risk",
+                "subsections": []
+            },
+            {
                 "id": "conclusion",
                 "label": "Conclusion",
                 "subsections": []
