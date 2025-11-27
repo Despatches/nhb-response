@@ -160,7 +160,6 @@ def create_app():
             },
             {
                 "id": "conclusion",
-                "label": "Conclusion",
                 "subsections": []
             },
             {
