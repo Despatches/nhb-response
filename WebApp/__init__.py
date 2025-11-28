@@ -156,11 +156,13 @@ def create_app():
             {
                 "id": "pollution_risks",
                 "label": "Pollution Risk",
+                "dynamic" : "sections/pollution_risks.jinja",
                 "subsections": []
             },
             {
                 "id": "flood_risks",
                 "label": "Flood Risk",
+                "dynamic" : "sections/flood_risks.jinja",
                 "subsections": []
             },
             {
