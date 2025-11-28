@@ -159,6 +159,11 @@ def create_app():
                 "subsections": []
             },
             {
+                "id": "flood_risks",
+                "label": "Flood Risk",
+                "subsections": []
+            },
+            {
                 "id": "conclusion",
                 "subsections": []
             },
