@@ -166,6 +166,12 @@ def create_app():
                 "subsections": []
             },
             {
+                "id": "imminent_harm",
+                "label": "Imminent Harm",
+                "dynamic" : "sections/imminent_harm.jinja",
+                "subsections": []
+            },
+            {
                 "id": "conclusion",
                 "subsections": []
             },
