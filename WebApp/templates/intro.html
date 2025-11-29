@@ -62,8 +62,10 @@
         <div class="legal-clause-ref">{{ quote_reference }}</div>
         <div>
             {% for line in quote_text %} 
-                <p><i>[{{first_line_number + ns.line_number}}]</i>
-                   {{line}}</p>
+                <p>
+                    <i>[{{first_line_number + ns.line_number}}]</i>
+                   {{line}}
+               </p>
                 <br>
                  {% set ns.line_number = ns.line_number + 1 %}
             {% endfor %}
@@ -73,17 +75,17 @@
 {% endmacro %}
 
 {% macro oscola_citation(
-    authors=None,
-    title=None,
-    year=None,
-    court=None,
-    neutral_citation=None,
-    reporter=None,
-    volume=None,
-    page=None,
-    url=None,
-    access_date=None,
-    doc_type="case"
+    authors = None,
+    title = None,
+    year = None,
+    court = None,
+    neutral_citation = None,
+    reporter = None,
+    volume = None,
+    page = None,
+    url = None,
+    access_date = None,
+    doc_type = "case"
 ) %}
     <span class="oscola-citation">
 
