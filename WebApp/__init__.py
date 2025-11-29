@@ -218,8 +218,6 @@ def create_app():
             UPB = "un-verified viewing Prospective buyer",
             OPB = "<b>Onboarded verified viewing prospective buyer</b>",
             DMB = "Disclosures, Marketing & Brochures",
-          {# BOOBI = "" #}
-            DMB = ""
             FBAG = "'Anything Goudhurst. Information, Buy & Sell, Jobs' facebook page",
             LegalTerm = {
                 "DOC" : "Duty of Care",
