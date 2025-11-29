@@ -215,8 +215,9 @@ def create_app():
             EH = "Edward Hume",
             MI = "Material Information",
             BMPA = "Barnard Marcus Property Auctioneers",
-            UPB = "usnverified viewing Prospect",
-            OPB = "<b>Onboarded verified viewing prospect</b>",
+            UPB = "un-verified viewing Prospective buyer",
+            OPB = "<b>Onboarded verified viewing prospective buyer</b>",
+            DMB = "Disclosures, Marketing & Brochures",
             FBAG = "'Anything Goudhurst. Information, Buy & Sell, Jobs' facebook page",
             LegalTerm = {
                 "DOC" : "Duty of Care",
@@ -246,8 +247,9 @@ def create_app():
             EH = "Edward Hume",
             MI = "Material Information",
             BMPA = "Barnard Marcus Property Auctioneers",
-            UPB = "usnverified viewing Prospect",
-            OPB = "<b>Onboarded verified viewing prospect</b>",
+            UPB = "un-verified viewing Prospective buyer",
+            OPB = "<b>Onboarded verified viewing prospective buyer</b>",
+            DMB = "Disclosures, Marketing & Brochures",
             FBAG = "'Anything Goudhurst. Information, Buy & Sell, Jobs' facebook page",
             LegalTerm = {
                 "DOC" : "Duty of Care",
