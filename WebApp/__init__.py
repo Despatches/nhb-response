@@ -224,6 +224,20 @@ def create_app():
             }
 
         );
+
+    @app.route("/counterclaim")
+    def counter_claim():
+        components = [
+            {
+                "id": "exibits",
+                "label": "Exibits",
+                "subsections": [],
+                "dynamic" : "counter_claim/exibits.jinja",
+            }
+        ];
+        return render_template('intro.html'components=components)
+
+
     @app.route('/')
     def hello():
         return render_template('intro.html')
