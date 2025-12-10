@@ -235,8 +235,7 @@ def create_app():
                 "dynamic" : "counter_claim/exibits.jinja",
             }
         ];
-        return render_template('intro.html'components=components)
-
+        return render_template('intro.html',components=components)
 
     @app.route('/')
     def hello():
@@ -244,7 +243,7 @@ def create_app():
 
     @app.route('/letter')
     def renderletter():
-        return render_template('letters/odt_nhb.27_nov_2025.adr.html',
+        return render_template('defence/adr_request_list/required_from_nhb.jinja',
             deeds = 'images/deeds/',
             claim_letter = 'images/nhb_claim_letter/', 
             claim_images = 'images/nhb_claim_images/',
