@@ -1,0 +1,153 @@
+
+{#
+| Variable               | Purpose                   |
+| ---------------------- | ------------------------- |
+| `communicator_name`    | Your name / firm name     |
+| `communicator_address` | Header address            |
+| `telephone`            | Contact                   |
+| `email`                | Contact                   |
+| `recipient_name`       | Person receiving letter   |
+| `recipient_address`    | Their address             |
+| `letter_date`          | Automatically insert date |
+| `reference_number`     | Case ref, file ID, etc.   |
+| `content`              | Main body of the letter   |
+| `logo_url`             | URL/path to a logo image  |
+| `show_watermark`       | Boolean (true/false)      |
+
+#}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Legal Letter</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 180px 60px 140px 60px;
+            line-height: 1.45;
+            position: relative;
+        }
+
+        /* Watermark */
+        .watermark {
+            position: fixed;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 80px;
+            color: #d0d6dc;
+            opacity: 0.15;
+            z-index: 0;
+            pointer-events: none;
+            white-space: nowrap;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #f0f3f7;
+            padding: 20px 60px 15px 60px;
+            border-bottom: 2px solid #2f4053;
+            z-index: 1000;
+        }
+
+        header strong {
+            font-size: 18px;
+            color: #2f4053;
+        }
+
+        /* Optional Logo */
+        .logo {
+            float: right;
+            margin-top: -5px;
+            max-height: 55px;
+        }
+
+        /* Footer */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #f0f3f7;
+            padding: 12px 60px 15px 60px;
+            border-top: 2px solid #2f4053;
+            font-size: 12px;
+            color: #2f4053;
+            z-index: 1000;
+        }
+
+        main {
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-number:after {
+            content: counter(page);
+        }
+
+        /* Letter formatting */
+        .recipient-block {
+            margin-bottom: 40px;
+            white-space: pre-line;
+        }
+
+        .meta {
+            margin-bottom: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+{% if show_watermark %}
+<div class="watermark">{{ communicator_name }}</div>
+{% endif %}
+
+<header>
+    <strong>{{ communicator_name }}</strong><br>
+    {{ communicator_address }}<br>
+    Tel: {{ telephone }} | Email: {{ email }}
+
+    {% if logo_url %}
+        <img src="{{ logo_url }}" class="logo">
+    {% endif %}
+</header>
+
+<footer>
+    <div style="float: left;">
+        {{ communicator_name }} — Confidential Communication
+    </div>
+    <div style="float: right;">
+        Page <span class="page-number"></span>
+    </div>
+</footer>
+
+<main>
+
+    <!-- Recipient Block -->
+    <div class="recipient-block">
+        {{ recipient_name }}<br>
+        {{ recipient_address }}
+    </div>
+
+    <!-- Date & Reference -->
+    <div class="meta">
+        <strong>Date:</strong> {{ letter_date }}<br>
+        <strong>Reference:</strong> {{ reference_number }}
+    </div>
+
+    <!-- Main Letter Content -->
+    {{ content }}
+
+</main>
+
+</body>
+</html>
