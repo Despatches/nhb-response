@@ -25,6 +25,38 @@ def create_app():
 
     # a simple page that says hello
 
+
+    def render_with_terms(url_path, components = []):
+        return render_template(
+            url_path, 
+            components=components, 
+            deeds = 'images/deeds/',
+            claim_letter = 'images/nhb_claim_letter/', 
+            claim_images = 'images/nhb_claim_images/',
+            marketing = 'images/FFH_marketing_photos/', 
+            diagrams = 'images/general_diagrams/',
+            MM = "<b>Mansell Mctaggart Estate Agents</b>",
+            FFH = "<b>Furnace Farm House</b>",
+            FFHO = "<b> Furnace Farmhouse Owner or Occupier</b>",
+            MMAM = "<b>Momentum Asset Management</b>",
+            NHB = "<b>NHB Investments Limited</b>",
+            NatHB = "<b>National Homebuyers</b>",
+            FF = "Furnace Farm",
+            OH = "Oliver Hume",
+            EH = "Edward Hume",
+            MI = "Material Information",
+            BMPA = "Barnard Marcus Property Auctioneers",
+            UPB = "un-verified viewing Prospective buyer",
+            OPB = "<b>Onboarded verified viewing prospective buyer</b>",
+            DMB = "Disclosures, Marketing & Brochures",
+            FBAG = "'Anything Goudhurst. Information, Buy & Sell, Jobs' facebook page",
+            LegalTerm = {
+                "DOC" : "Duty of Care",
+            }
+
+        );        
+    
+
     print("basic function")
     @app.route('/intro')
     def intro():
@@ -196,34 +228,8 @@ def create_app():
                 []
             ]
         }
-        return render_template(
-            'intro.html', 
-            components=components, 
-            deeds = 'images/deeds/',
-            claim_letter = 'images/nhb_claim_letter/', 
-            claim_images = 'images/nhb_claim_images/',
-            marketing = 'images/FFH_marketing_photos/', 
-            diagrams = 'images/general_diagrams/',
-            MM = "<b>Mansell Mctaggart Estate Agents</b>",
-            FFH = "<b>Furnace Farm House</b>",
-            FFHO = "<b> Furnace Farmhouse Owner or Occupier</b>",
-            MMAM = "<b>Momentum Asset Management</b>",
-            NHB = "<b>NHB Investments Limited</b>",
-            NatHB = "<b>National Homebuyers</b>",
-            FF = "Furnace Farm",
-            OH = "Oliver Hume",
-            EH = "Edward Hume",
-            MI = "Material Information",
-            BMPA = "Barnard Marcus Property Auctioneers",
-            UPB = "un-verified viewing Prospective buyer",
-            OPB = "<b>Onboarded verified viewing prospective buyer</b>",
-            DMB = "Disclosures, Marketing & Brochures",
-            FBAG = "'Anything Goudhurst. Information, Buy & Sell, Jobs' facebook page",
-            LegalTerm = {
-                "DOC" : "Duty of Care",
-            }
 
-        );
+        return render_with_terms('intro.html',components)
 
     @app.route("/counterclaim")
     def counter_claim():
@@ -241,32 +247,21 @@ def create_app():
     def hello():
         return render_template('intro.html')
 
-    @app.route('/letter')
-    def renderletter():
-        return render_template('defence/adr_request_list/required_from_nhb.jinja',
-            deeds = 'images/deeds/',
-            claim_letter = 'images/nhb_claim_letter/', 
-            claim_images = 'images/nhb_claim_images/',
-            marketing = 'images/FFH_marketing_photos/', 
-            diagrams = 'images/general_diagrams/',
-            MM = "<b>Mansell Mctaggart Estate Agents</b>",
-            FFH = "<b>Furnace Farm House</b>",
-            FFHO = "<b> Furnace Farmhouse Owner or Occupier</b>",
-            MMAM = "<b>Momentum Asset Management</b>",
-            NHB = "<b>NHB Investments Limited</b>",
-            NatHB = "<b>National Homebuyers</b>",
-            FF = "Furnace Farm",
-            OH = "Oliver Hume",
-            EH = "Edward Hume",
-            MI = "Material Information",
-            BMPA = "Barnard Marcus Property Auctioneers",
-            UPB = "un-verified viewing Prospective buyer",
-            OPB = "<b>Onboarded verified viewing prospective buyer</b>",
-            DMB = "Disclosures, Marketing & Brochures",
-            FBAG = "'Anything Goudhurst. Information, Buy & Sell, Jobs' facebook page",
-            LegalTerm = {
-                "DOC" : "Duty of Care",
-            })
+    @app.route('/letter/<wanted_letter>')
+    def RenderLetter(wanted_letter):
+
+        letters = {
+            "nhb_disclosure" :  'defence/adr_request_list/required_from_nhb.jinja',
+            "facebook_request" : 'facebook/letter_facebook.jinja',
+        }
+
+        url_path = ""
+        if wanted_letter in letters:
+            url_path = letters[wanted_letter]
+
+        if url_path != "":
+            return render_with_terms(url_path)
+
 
 
     @app.errorhandler(404)
