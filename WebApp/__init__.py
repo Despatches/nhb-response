@@ -2,6 +2,8 @@ import os
 
 from flask import Flask, render_template
 
+from jinja2 import Template
+
 from .config import Config
 from .shorthand import shorts as shorthand_names
 
@@ -247,6 +249,12 @@ def create_app():
     def hello():
         return render_template('intro.html')
 
+
+
+    def render_letter(url_path):
+        letter_content = render_with_terms(url_path)
+        return render_template("letters/base_letter.jinja",content = letter_content)
+
     @app.route('/letter/<wanted_letter>')
     def RenderLetter(wanted_letter):
 
@@ -260,7 +268,7 @@ def create_app():
             url_path = letters[wanted_letter]
 
         if url_path != "":
-            return render_with_terms(url_path)
+            return render_letter(url_path)
 
 
 
