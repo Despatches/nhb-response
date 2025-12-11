@@ -55,19 +55,51 @@
 {% macro line_by_line_text_quotation(
     quote_text = [],
     first_line_number = 1,
-    quote_reference = ""
+    quote_reference = "",
+    quote_source = ""
 )%}
-    {% set ns = namespace(line_number=1) %}
+    {% set ns = namespace(colour="black") %}
+    {% if quote_source == "ODT" %}
+        {% set ns.colour = "red" %}
+    {% elif quote_source == "deed" %}
+         {% set ns.colour = "navy blue" %}
+    {% endif %}
+
+     {% set ns.bold = False %}
+
     <div id="{{ quote_reference }}" class="legal-clause">
         <div class="legal-clause-ref">{{ quote_reference }}</div>
         <div>
-            {% for line in quote_text %} 
-                <p>
-                    <i>[{{first_line_number + ns.line_number}}]</i>
-                   {{line}}
-               </p>
+            {% for line in quote_text %}
+                {#% set bold =  loop.index % 2 == 1%}
+                {% if bold %}
+                    <b>
+                {% endif %#}
+                <span><i>[{{first_line_number + loop.index0}}]&nbsp &nbsp</i></span>
+
+                   <span style="color:{{ ns.colour }}">
+                    {% for l in  line %}
+                        <span>
+                        {{ l | safe}}
+                        {% if l == " "  %}
+                            {{ "&nbsp" | safe }}
+                        {% endif %}
+                        </span>
+
+                        {% if l == "."  %}
+                            {% set ns.bold = ns.bold == False %}
+                             {% if ns.bold == False %}
+                                </b>
+                            {% else %}
+                                <b>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %} 
+                </span>
+
+
                 <br>
-                 {% set ns.line_number = ns.line_number + 1 %}
+                 
             {% endfor %}
         </div>
     </div>
