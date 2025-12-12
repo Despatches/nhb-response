@@ -253,7 +253,11 @@ def create_app():
 
     def render_letter(url_path):
         letter_content = render_with_terms(url_path)
-        return render_template("letters/base_letter.jinja",content = letter_content)
+        return render_template(
+            "letters/base_letter.jinja",
+            content = letter_content,
+            communicator_name = "We are the liberation front"
+        )
 
     @app.route('/letter/<wanted_letter>')
     def RenderLetter(wanted_letter):
