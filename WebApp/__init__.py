@@ -51,6 +51,13 @@ def create_app():
             UPB = "un-verified viewing Prospective buyer",
             OPB = "<b>Onboarded verified viewing prospective buyer</b>",
             DMB = "Disclosures, Marketing & Brochures",
+            FB = { 
+                "U" : "Facebook User",
+                "P" : "Facebook Page Content Publisher",
+                "M" : "Facebook Moderator",
+                "O" : "Facebook Site Owner",
+                "C" : "Facebook Corporation",
+                },
             FBAG = "'Anything Goudhurst. Information, Buy & Sell, Jobs' facebook page",
             LegalTerm = {
                 "DOC" : "Duty of Care",
