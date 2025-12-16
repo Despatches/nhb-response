@@ -40,17 +40,19 @@
  	<h2></h2>
 		<h1>Legislation, Relevant dates, Statutory Duty </h1>
 		<ol type="1">
-
-			<li>
-				Legislation
-			</li>
-			<li>
-				Relevant dates
-			</li>
-			<li>
-				Statutory Duty
-			</li>
+			<p>
+				<li>
+					Legislation
+				</li>
+				<li>
+					Relevant dates
+				</li>
+				<li>
+					Statutory Duty
+				</li>
+			</p>
 		</ol>
+	
 		<h1>Defined: Bridleway, Objective function </h1>
 		<ol type="1">
 			<li>
@@ -66,10 +68,10 @@
 		<h1>Ownership, Easements Rights, Concession </h1>
 		<ol type="1">
 			<li>
-				OwnershipOwnership
+				Ownership
 			</li>
 			<li>
-				Easements Rights
+				Easements & Rights
 			</li>
 			<li>
 				Concession
