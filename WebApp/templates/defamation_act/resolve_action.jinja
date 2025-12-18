@@ -42,20 +42,46 @@
 							<li>
 								(a)it was not possible for the claimant to identify the person who posted the statement,
 								<ol type="i">
+
+
+"identifier": "can_claimant_id_statement_maker_sufficient",
+                            "question_set": "true",
+                            "question_numbering": "",
+                            "question_title":  "Can the claimant determine the identify of the person who posted the statement?",
+                            "sub_q_other_text": "is the information sufficient for the claimant to issue a claim without further verification of ID and searches for contact details",
+                            "sub_questions": [
+                                {} ]
 									<li>
-										Can the claimant determine the identify the person who posted the statement?
+										Can the claimant determine the identify of the person who posted the statement?
 									</li>
 			<li>					
 				# "if" YES
 			</li>	
-									<li>
-										Can the claimant identify sufficient verified information about the person who posted the statement to issue a claim?
-									</li>
-									"bool
+
+"identifier": "can_claimant_id_statement_maker_sufficient",
+                            "question_set": "true",
+                            "question_numbering": "",
+                            "question_title":  "Can the claimant identify sufficient verified information about the person who posted the statement to issue a claim?",
+                            "sub_q_other_text": "provide the email address used to manage the user account",
+                            "sub_questions": [
+                                {} ]
+
+			<li>					
+				# "if" NO
+			</li>
+
+"identifier": "id-statement_maker_detail",
+                            "question_set": "true",
+                            "question_numbering": "",
+                            "question_title":  "provide the verified identity and contact details of the user responsible for posting the statement",
+                            "sub_q_other_text": "provide the email address used to manage the user account",
+                            "sub_questions": [
+                                {} ]
+
 									<h> Identity test <h>
 										<br>
 											<li>
-												Can the claimant reasonably verify the identity
+												Can the claimant reasonably verify the identity of the person that posted the statement?
 											</li>
 
 			<li>					
