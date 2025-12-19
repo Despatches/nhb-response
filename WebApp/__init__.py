@@ -149,7 +149,19 @@ def create_app():
                     },
                  ]
                 #"lit_exhibit" : True,
-            },            
+            },             
+            {
+                "label" :"Dishonesty",
+                "id" : "dishonesty",
+                "dynamic" : "sections/dishonesty.jinja",
+                #"lit_exhibit" : True,
+            },           
+            {
+                "label" :"Crime",
+                "id" : "crime",
+                "dynamic" : "sections/crime.jinja",
+                #"lit_exhibit" : True,
+            },        
             {
                 "label" :"Dumped Garden Waste",
                 "id" : "dumped",
