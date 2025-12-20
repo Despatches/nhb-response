@@ -148,7 +148,19 @@ def create_app():
                     },
                  ]
                 #"lit_exhibit" : True,
-            },            
+            },             
+            {
+                "label" :"Dishonesty",
+                "id" : "dishonesty",
+                "dynamic" : "sections/dishonesty.jinja",
+                #"lit_exhibit" : True,
+            },           
+            {
+                "label" :"Crime",
+                "id" : "crime",
+                "dynamic" : "sections/crime.jinja",
+                #"lit_exhibit" : True,
+            },        
             {
                 "label" :"Dumped Garden Waste",
                 "id" : "dumped",
@@ -203,6 +215,19 @@ def create_app():
                 "id": "flood_risks",
                 "label": "Flood Risk",
                 "dynamic" : "sections/flood_risks.jinja",
+                "subsections": []
+            },
+
+            {
+                "id": "defamation_act_sec.5_web_operators",
+                "label": "Defamation Web Operators",
+                "dynamic" : "sections/defamation_act_sec.5_web_operators.jinja",
+                "subsections": []
+            },
+            {
+                "id": "imminent_harm",
+                "label": "Imminent Harm",
+                "dynamic" : "sections/imminent_harm.jinja",
                 "subsections": []
             },
             {
