@@ -218,6 +218,19 @@ def create_app():
                 "dynamic" : "sections/flood_risks.jinja",
                 "subsections": []
             },
+
+            {
+                "id": "defamation_act_sec.5_web_operators",
+                "label": "Defamation Web Operators",
+                "dynamic" : "sections/defamation_act_sec.5_web_operators.jinja",
+                "subsections": []
+            },
+            {
+                "id": "imminent_harm",
+                "label": "Imminent Harm",
+                "dynamic" : "sections/imminent_harm.jinja",
+                "subsections": []
+            },
             {
                 "id": "imminent_harm",
                 "label": "Imminent Harm",
