@@ -222,7 +222,7 @@ def create_app():
             {
                 "id": "defamation_act_sec.5_web_operators",
                 "label": "Defamation Web Operators",
-                "dynamic" : "sections/defamation_act_sec.5_web_operators.jinja",
+                "dynamic" : "defamations_act/defamation_act_sec.5_web_operators.jinja",
                 "subsections": []
             },
             {
