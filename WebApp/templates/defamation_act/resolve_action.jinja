@@ -16,23 +16,67 @@
 			<ol type="1">
 
 				<li>
-					(1)This section applies where an action for defamation is brought against the operator of a website in respect of a statement posted on the website.
+					(1) This Section (S.5) applies where an action for defamation is brought against the operator of a website in respect of a statement posted on the website.
 					<br>
 					<h> Website operator test<h>
 						<br>
 							<li>
 								Is the respondent an operator of a website or online portal or resource that has published the statement claimed to be defamation?
 							</li>
+					NEEDS A LABELLED IMAGE EXAMPLE
+							<li>
+								Is the respondent a creator and or operator of a page that is hosted on a website or online portal operated by another person?
+							</li>
+					NEEDS A LABELLED IMAGE EXAMPLE
+							<li>
+								Is the respondent the author of any post or topic or blog space that contains information and or statements published by them?
+							</li>
+					NEEDS A LABELLED IMAGE EXAMPLE
+							<li>
+								Does any website or website component published by the respondent enable third parties to sumbit and publish statements?
+							</li>
+					NEEDS A LABELLED IMAGE EXAMPLE
 				</li>
 			<br>
 				<li>
 					(2)It is a defence for the operator to show that it was not the operator who posted the statement on the website.
 					<br>
-					<h> did operator post statement test <h>
+					<h> Did operator post statement Test <h>
 						<br>
-							<li>
-								Did the operator of the website identified by the claimant post or publish the statement/s claimed to be defamation?
-							</li>
+							<ol>
+								<li>
+									Did the operator of the website identified by the claimant post or publish the statement/s claimed to be defamation?
+								</li>
+									<li>
+										question_reliance
+										"if_yes" confirm which statements does the repondent published: list below
+											<ol type="1">
+												<li>
+													statement
+													date
+													url
+												</li>
+											</ol>
+									</li>
+								<li>
+									Does the operator of the website rely upon a defence that statement/s claimed to be defamatory were published by a person other than the Respondent? 
+										bool
+									<li>
+										question_reliance
+										"if_yes" confirm which statements the operator of the website accepts responsibility for publishing : 
+											(list below)
+											<ol type="1">
+												<li>
+													"statement" : ""
+													"date posted" : ""
+													"website url" : ""
+												</li>
+											</ol>
+									</li>
+								</li>
+							</ol>
+						<br>
+				</li>
 				</li>
 			<br>
 				<li>
@@ -52,10 +96,29 @@
                             "sub_questions": [
                                 {} ]
 									<li>
-										Can the claimant determine the identify of the person who posted the statement?
+										Can the respondent determine the identify of each person the claimant deems to have posted any defamatory statement? 
+											bool
+											 "if" YES
 									</li>
+									<li>
+										Is the respondent no able to provide sufficient information for the claimant to issue proceedings to apprehend the authors of each defamatory statement? 
+											bool
+											<li>
+												"if" YES
+											</li>
+											<li>
+												"if" NO
+											</li>
+											 
+								
+									</li>
+										<ol>
+											<li>
+												How many 
+											</li>
+										</ol>
 			<li>					
-				# "if" YES
+				
 			</li>	
 
 "identifier": "can_claimant_id_statement_maker_sufficient",
