@@ -52,6 +52,7 @@ def create_app():
             UPB = "un-verified viewing Prospective buyer",
             OPB = "<b> verified Onboarded prospective buyer</b>",
             DMB = "Disclosures, Marketing & Brochures",
+            CPR = "Civil Procedure Rules (CPR)",
             FB = { 
                 "U" : "Facebook User",
                 "P" : "Facebook Page Content Publisher",
@@ -62,11 +63,12 @@ def create_app():
             FBAG = "'Anything Goudhurst. Information, Buy & Sell, Jobs' facebook page",
             LegalTerm = {
                 "DOC" : "Duty of Care",
+                "MC2DPM" : "... to Disclose ..",
+                "PMA" : "... to Disclose ..",
+                "CPRR" : "CPR Regulation ref.:",
             }
-
         );        
     
-
     print("basic function")
     @app.route('/intro')
     def intro():
