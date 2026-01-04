@@ -42,6 +42,7 @@ def create_app():
             FFHO = "<b> Furnace Farmhouse Owner or Occupier</b>",
             MMAM = "<b>Momentum Asset Management</b>",
             NHB = "<b>NHB Investments Limited</b>",
+            VARS = "<b>Vendor, Agent, Reseller, Surveyor</b>",
             NatHB = "<b>National Homebuyers</b>",
             AAI = "Agent Auction or Intermediary",
             FF = "Furnace Farm",
