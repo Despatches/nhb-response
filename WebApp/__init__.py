@@ -297,6 +297,7 @@ def create_app():
         letters = {
             "nhb_disclosure" :  'defence/adr_request_list/required_from_nhb.jinja',
             "facebook_request" : 'facebook/letter_facebook.jinja',
+            "listed_compliance" : 'twbc_listed_building_planning_enforcement.jinja',
         }
 
         url_path = ""
