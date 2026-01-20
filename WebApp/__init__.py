@@ -42,15 +42,18 @@ def create_app():
             FFHO = "<b> Furnace Farmhouse Owner or Occupier</b>",
             MMAM = "<b>Momentum Asset Management</b>",
             NHB = "<b>NHB Investments Limited</b>",
+            VARS = "<b>Vendor, Agent, Reseller, Surveyor</b>",
             NatHB = "<b>National Homebuyers</b>",
+            AAI = "Agent Auction or Intermediary",
             FF = "Furnace Farm",
             OH = "Oliver Hume",
             EH = "Edward Hume",
             MI = "Material Information",
             BMPA = "Barnard Marcus Property Auctioneers",
             UPB = "un-verified viewing Prospective buyer",
-            OPB = "<b>Onboarded verified viewing prospective buyer</b>",
+            OPB = "<b> verified Onboarded prospective buyer</b>",
             DMB = "Disclosures, Marketing & Brochures",
+            CPR = "Civil Procedure Rules (CPR)",
             FB = { 
                 "U" : "Facebook User",
                 "P" : "Facebook Page Content Publisher",
@@ -61,11 +64,13 @@ def create_app():
             FBAG = "'Anything Goudhurst. Information, Buy & Sell, Jobs' facebook page",
             LegalTerm = {
                 "DOC" : "Duty of Care",
+                "MC2DPM" : "... to Disclose ..",
+                "PMA" : "... to Disclose ..",
+                "CPRR" : "CPR Regulation ref.:",
             }
         );        
     
-
-
+    print("basic function")
     @app.route('/intro')
     def intro():
         components = [
@@ -221,7 +226,7 @@ def create_app():
             {
                 "id": "defamation_act_sec.5_web_operators",
                 "label": "Defamation Web Operators",
-                "dynamic" : "sections/defamation_act_sec.5_web_operators.jinja",
+                "dynamic" : "defamation_act/defamation_act_sec.5_web_operators.jinja",
                 "subsections": []
             },
             {
