@@ -60,7 +60,7 @@ def create_app():
                 "M" : "Facebook Moderator",
                 "O" : "Facebook Site Owner",
                 "C" : "Facebook Corporation",
-                },
+            },
             FBAG = "'Anything Goudhurst. Information, Buy & Sell, Jobs' facebook page",
             LegalTerm = {
                 "DOC" : "Duty of Care",
@@ -267,10 +267,30 @@ def create_app():
         ]
 
         tables = {
-            "my_table" : [
-                [],
-                []
-            ]
+            "my_table" : {
+                "headings" : ["heading1","heading2","heading3"],
+                "content" : [
+                    ["tyms","650000","october"],
+                    ["tyms","650000","october"],
+                    ["tyms","650000","october"],
+                ]
+            }
+        }
+
+        table2 = {
+            "my_table" : {
+                "headings" : ["heading1","heading2","heading3"],
+                "content" : [
+                    {
+                        "date" : "<the row text>",
+                        "name" : "<row_context>",
+                        "price" : "<the row text>"
+                    },
+                    {
+
+                    }
+                ]
+            }
         }
 
         return render_with_terms('intro.html',components)
@@ -295,7 +315,13 @@ def create_app():
 
     def render_letter(url_path):
         letter_content = render_with_terms(url_path)
-        return render_template("letters/base_letter.jinja",content = letter_content)
+        return render_template(
+            "letters/base_letter.jinja",
+            content = letter_content,
+            communicator_name = "We are the liberation front",
+            telephone = "077857864",
+            email="libfront@bastards.com"
+        )
 
     @app.route('/letter/<wanted_letter>')
     def RenderLetter(wanted_letter):
@@ -303,6 +329,7 @@ def create_app():
         letters = {
             "nhb_disclosure" :  'defence/adr_request_list/required_from_nhb.jinja',
             "facebook_request" : 'facebook/letter_facebook.jinja',
+            "dsar_letter" : "facebook/dsar_letter.jinja",
             "listed_compliance" : 'defence/twbc/planning_enf_issues/twbc_listed_building_planning_enforcement.jinja',
         }
 

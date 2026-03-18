@@ -2,7 +2,7 @@
 
 	<caption>{{ table_heading }}</caption>
 	<table>
-	{% for question in  table_data%}
+	{% for question in  table_data %}
 		<tr>
 			<td>
 				{{ question.context }}
@@ -10,6 +10,25 @@
 			<td>
 				{{ question.text }}
 			</td>
+		</tr>
+	{% endfor %}
+	</table>
+{% endmacro %}
+
+
+{#  {{ general_table(table_data) }}  #}
+
+{% macro general_table(table_data, table_heading = "Facts to be Established") %}
+
+	<caption>{{ table_heading }}</caption>
+	<table>
+	{% for row in  table_data.content %}
+		<tr>
+			{% for item in row %}
+			<td>
+				{{ item }}
+			</td>
+			{% endfor %}
 		</tr>
 	{% endfor %}
 	</table>
