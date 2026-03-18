@@ -65,41 +65,21 @@
          {% set ns.colour = "navy blue" %}
     {% endif %}
 
-     {% set ns.bold = False %}
+    {% set ns.bold = False %}
 
     <div id="{{ quote_reference }}" class="legal-clause">
         <div class="legal-clause-ref">{{ quote_reference }}</div>
         <div>
             {% for line in quote_text %}
-                {#% set bold =  loop.index % 2 == 1%}
-                {% if bold %}
-                    <b>
-                {% endif %#}
-                <span><i>[{{first_line_number + loop.index0}}]&nbsp &nbsp</i></span>
-
-                   <span style="color:{{ ns.colour }}">
-                    {% for l in  line %}
-                        <span>
-                        {{ l | safe}}
-                        {% if l == " "  %}
-                            {{ "&nbsp" | safe }}
-                        {% endif %}
-                        </span>
-
-                        {% if l == "."  %}
-                            {% set ns.bold = ns.bold == False %}
-                             {% if ns.bold == False %}
-                                </b>
-                            {% else %}
-                                <b>
-                            {% endif %}
-                        {% endif %}
-                    {% endfor %} 
-                </span>
-
-
+                <span><i>[{{first_line_number + loop.index0}}]&nbsp;&nbsp;</i></span>
+                <span style="color:{{ ns.colour }}">{% for l in line -%}
+                    {%- if l == " " %}&nbsp;{%- else -%}{{- l | safe -}}{%- endif -%}
+                    {%- if l == "." -%}
+                        {%- set ns.bold = not ns.bold -%}
+                        {%- if ns.bold %}<b>{%- else -%}</b>{%- endif -%}
+                    {%- endif -%}
+                {%- endfor %}</span>
                 <br>
-                 
             {% endfor %}
         </div>
     </div>
