@@ -1,15 +1,123 @@
+{% macro question_table(table_data, table_heading = "Facts to be Established") %}
+    <div class ="margin:auto">
+    <caption>{{ table_heading }}</caption>
+    <table style="border-left:5px solid #1abc9c">
+        <tbody class ="exhibit-body">
+        {% for question in  table_data %}
+            <tr style="border-left:5px solid #1abc9c">
+                <td style="border: 3px solid #ccc;">
+                    {{ question.context }}
+                </td>
+                <td style="border: 3px solid #ccc;">
+                    {{ question.text }}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endmacro %}
+
+{% macro risk_itinerary(
+    figure_ref = None,
+    Item_spec = None,
+    grid_ref = None
+) %}
+        It is unclear how the IBC is causing a public health and safety risk.
+        {{figure_ref}} identifying the item {{ Item_spec }} located at {{grid_ref}} fails to specify : 
+        <ol>
+            <li>
+                nature of risk
+            </li>
+            <li>
+                severity of risk
+            </li>
+            <li>
+                statutory instrument or HSE reference to specified risks
+            </li>
+        </ol>
+{% endmacro %}
+
+{% macro text_quotation(
+    quote_text = "",
+    quote_reference = ""
+)%}
+
+    <div id="{{ quote_reference }}" class="legal-clause">
+        <div class="legal-clause-ref">{{ quote_reference }}</div>
+        <p>
+            {{quote_text}}
+        </p>
+    </div>
+
+{% endmacro %}
+
+{% macro line_by_line_text_quotation(
+    quote_text = [],
+    first_line_number = 1,
+    quote_reference = "",
+    quote_source = ""
+)%}
+    {% set ns = namespace(colour="black") %}
+    {% if quote_source == "ODT" %}
+        {% set ns.colour = "red" %}
+    {% elif quote_source == "deed" %}
+         {% set ns.colour = "navy blue" %}
+    {% endif %}
+
+     {% set ns.bold = False %}
+
+    <div id="{{ quote_reference }}" class="legal-clause">
+        <div class="legal-clause-ref">{{ quote_reference }}</div>
+        <div>
+            {% for line in quote_text %}
+                {#% set bold =  loop.index % 2 == 1%}
+                {% if bold %}
+                    <b>
+                {% endif %#}
+                <span><i>[{{first_line_number + loop.index0}}]&nbsp &nbsp</i></span>
+
+                   <span style="color:{{ ns.colour }}">
+                    {% for l in  line %}
+                        <span>
+                        {{ l | safe}}
+                        {% if l == " "  %}
+                            {{ "&nbsp" | safe }}
+                        {% endif %}
+                        </span>
+
+                        {% if l == "."  %}
+                            {% set ns.bold = ns.bold == False %}
+                             {% if ns.bold == False %}
+                                </b>
+                            {% else %}
+                                <b>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %} 
+                </span>
+
+
+                <br>
+                 
+            {% endfor %}
+        </div>
+    </div>
+
+{% endmacro %}
+
 {% macro oscola_citation(
-    authors=None,
-    title=None,
-    year=None,
-    court=None,
-    neutral_citation=None,
-    reporter=None,
-    volume=None,
-    page=None,
-    url=None,
-    access_date=None,
-    doc_type="case"
+    authors = None,
+    title = None,
+    year = None,
+    court = None,
+    neutral_citation = None,
+    reporter = None,
+    volume = None,
+    page = None,
+    url = None,
+    access_date = None,
+    doc_type = "case"
 ) %}
     <span class="oscola-citation">
 
@@ -95,7 +203,9 @@ Example use
                         {% if item.subsections %}
                             <ul class="subsection-list">
                                 {% for sub in item.subsections %}
-                                    <li><a href="#{{ sub.id }}" id="link-{{ sub.id }}">{{ sub.label }}</a></li>
+                                    <li>
+                                        <a href="#{{ sub.id }}" id="link-{{ sub.id }}">{{ sub.label }}</a>
+                                    </li>
                                 {% endfor %}
                             </ul>
                         {% endif %}
@@ -138,6 +248,8 @@ Example use
             </div>
         </main>
     </div>
+
+</body>
 
     <script>
         // Scroll highlight for main sections and subsections

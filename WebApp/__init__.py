@@ -2,6 +2,8 @@ import os
 
 from flask import Flask, render_template
 
+from jinja2 import Template
+
 from .config import Config
 from .shorthand import shorts as shorthand_names
 
@@ -25,6 +27,49 @@ def create_app():
 
     # a simple page that says hello
 
+
+    def render_with_terms(url_path, components = []):
+        return render_template(
+            url_path, 
+            components=components, 
+            deeds = 'images/deeds/',
+            claim_letter = 'images/nhb_claim_letter/', 
+            claim_images = 'images/nhb_claim_images/',
+            marketing = 'images/FFH_marketing_photos/', 
+            diagrams = 'images/general_diagrams/',
+            MM = "<b>Mansell Mctaggart Estate Agents</b>",
+            FFH = "<b>Furnace Farm House</b>",
+            FFHO = "<b> Furnace Farmhouse Owner or Occupier</b>",
+            MMAM = "<b>Momentum Asset Management</b>",
+            NHB = "<b>NHB Investments Limited</b>",
+            VARS = "<b>Vendor, Agent, Reseller, Surveyor</b>",
+            NatHB = "<b>National Homebuyers</b>",
+            AAI = "Agent Auction or Intermediary",
+            FF = "Furnace Farm",
+            OH = "Oliver Hume",
+            EH = "Edward Hume",
+            MI = "Material Information",
+            BMPA = "Barnard Marcus Property Auctioneers",
+            UPB = "un-verified viewing Prospective buyer",
+            OPB = "<b> verified Onboarded prospective buyer</b>",
+            DMB = "Disclosures, Marketing & Brochures",
+            CPR = "Civil Procedure Rules (CPR)",
+            FB = { 
+                "U" : "Facebook User",
+                "P" : "Facebook Page Content Publisher",
+                "M" : "Facebook Moderator",
+                "O" : "Facebook Site Owner",
+                "C" : "Facebook Corporation",
+                },
+            FBAG = "'Anything Goudhurst. Information, Buy & Sell, Jobs' facebook page",
+            LegalTerm = {
+                "DOC" : "Duty of Care",
+                "MC2DPM" : "... to Disclose ..",
+                "PMA" : "... to Disclose ..",
+                "CPRR" : "CPR Regulation ref.:",
+            }
+        );        
+    
     print("basic function")
     @app.route('/intro')
     def intro():
@@ -68,9 +113,35 @@ def create_app():
                 "label" :"Abandoned and Waste Materials",
                 "id" : "abandonment_and_waste",
                 "dynamic" : "sections/abandonment_and_waste.jinja",
+                "subsections": [
+                    {
+                        "label" :"analysis of Exhibit NHBE-a",
+                        "id" : "exhibit-NHBE-a",
+                        "dynamic" : "sections/exhibit_analysis/exhibit-NHBE-a.jinja",
+                        #"lit_exhibit" : True,
+                    },   
+                    {
+                        "label" :"analysis of Exhibit NHBE-b",
+                        "id" : "exhibit-NHBE-b",
+                        "dynamic" : "sections/exhibit_analysis/exhibit-NHBE-b.jinja",
+                        #"lit_exhibit" : True,
+                    }, 
+                    {
+                        "label" :"analysis of Exhibit NHBE-c",
+                        "id" : "exhibit-NHBE-c",
+                        "dynamic" : "sections/exhibit_analysis/exhibit-NHBE-c.jinja",
+                        #"lit_exhibit" : True,
+                    },  
+                    {
+                        "label" :"analysis of Exhibit NHBE-d",
+                        "id" : "exhibit-NHBE-d",
+                        "dynamic" : "sections/exhibit_analysis/exhibit-NHBE-d.jinja",
+                        #"lit_exhibit" : True,
+                    },               
+                ]
             },
             {
-                "label" :"General Tresspass and nuissnace",
+                "label" :"General trespass and nuisance",
                 "id" : "general_trespass",
                 "dynamic" : "sections/general_trespass.jinja",
                  "subsections": [
@@ -82,7 +153,19 @@ def create_app():
                     },
                  ]
                 #"lit_exhibit" : True,
-            },            
+            },             
+            {
+                "label" :"Dishonesty",
+                "id" : "dishonesty",
+                "dynamic" : "sections/dishonesty.jinja",
+                #"lit_exhibit" : True,
+            },           
+            {
+                "label" :"Crime",
+                "id" : "crime",
+                "dynamic" : "sections/crime.jinja",
+                #"lit_exhibit" : True,
+            },        
             {
                 "label" :"Dumped Garden Waste",
                 "id" : "dumped",
@@ -123,8 +206,49 @@ def create_app():
                 "dynamic" : "sections/social_media_response.jinja",
             },
             {
+                "id" : "property_value",
+                "label" :"property value",
+                "dynamic" : "sections/property_value.jinja",
+            },
+            {
+                "id": "pollution_risks",
+                "label": "Pollution Risk",
+                "dynamic" : "sections/pollution_risks.jinja",
+                "subsections": []
+            },
+            {
+                "id": "flood_risks",
+                "label": "Flood Risk",
+                "dynamic" : "sections/flood_risks.jinja",
+                "subsections": []
+            },
+
+            {
+                "id": "defamation_act_sec.5_web_operators",
+                "label": "Defamation Web Operators",
+                "dynamic" : "defamation_act/defamation_act_sec.5_web_operators.jinja",
+                "subsections": []
+            },
+            {
+                "id": "imminent_harm",
+                "label": "Imminent Harm",
+                "dynamic" : "sections/imminent_harm.jinja",
+                "subsections": []
+            },
+            {
+                "id": "imminent_harm",
+                "label": "Imminent Harm",
+                "dynamic" : "sections/imminent_harm.jinja",
+                "subsections": []
+            },
+            {
+                "id": "listed_compliance",
+                "label": "Listed Building Compliance",
+                "dynamic" : "defence/twbc/planning_enf_issues/twbc_listed_building_planning_enforcement.jinja",
+                "subsections": []
+            },
+            {
                 "id": "conclusion",
-                "label": "Conclusion",
                 "subsections": []
             },
             {
@@ -132,37 +256,64 @@ def create_app():
                 "label": "Exibits",
                 "subsections": [],
                 "dynamic" : "sections/exibits.jinja",
+                "subsections": [
+                    {
+                        "id" : "letter_exibits",
+                        "label" :"Corespondence Exhibits",
+                        "dynamic" : "sections/letter_exhibits.jinja",                    
+                    }
+                ]
             }
         ]
-        return render_template(
-            'intro.html', 
-            components=components, 
-            deeds = 'images/deeds/',
-            claim_letter = 'images/nhb_claim_letter/', 
-            claim_images = 'images/nhb_claim_images/',
-            marketing = 'images/FFH_marketing_photos/', 
-            diagrams = 'images/general_diagrams/',
-            MM = "<b>Mansell Mctaggart Estate Agents</b>",
-            FFH = "<b>Furnace Farm House</b>",
-            FFHO = "Furnace Farmhouse Owner",
-            MMAM = "<b>Momentum Asset Management</b>",
-            NHB = "<b>NHB Investments Limited</b>",
-            NatHB = "<b>National Homebuyers</b>",
-            FF = "Furnace Farm",
-            OH = "Oliver Hume",
-            EH = "Edward Hume",
-            MI = "Material Information",
-            BMPA = "Barnard Marcus Property Auctioneers",
-            UPB = "usnverified viewing Prospect",
-            OPB = "<b>Onboarded verified viewing prospect</b>",
-            FBAG = "'Anything Goudhurst. Information, Buy & Sell, Jobs' facebook page",
-            LegalTerm = {
-                "DOC" : "Duty of Care",
+
+        tables = {
+            "my_table" : [
+                [],
+                []
+            ]
+        }
+
+        return render_with_terms('intro.html',components)
+
+    @app.route("/counterclaim")
+    def counter_claim():
+        components = [
+            {
+                "id": "exibits",
+                "label": "Exibits",
+                "subsections": [],
+                "dynamic" : "counter_claim/exibits.jinja",
             }
-        );
+        ];
+        return render_template('intro.html',components=components)
+
     @app.route('/')
     def hello():
         return render_template('intro.html')
+
+
+
+    def render_letter(url_path):
+        letter_content = render_with_terms(url_path)
+        return render_template("letters/base_letter.jinja",content = letter_content)
+
+    @app.route('/letter/<wanted_letter>')
+    def RenderLetter(wanted_letter):
+
+        letters = {
+            "nhb_disclosure" :  'defence/adr_request_list/required_from_nhb.jinja',
+            "facebook_request" : 'facebook/letter_facebook.jinja',
+            "listed_compliance" : 'defence/twbc/planning_enf_issues/twbc_listed_building_planning_enforcement.jinja',
+        }
+
+        url_path = ""
+        if wanted_letter in letters:
+            url_path = letters[wanted_letter]
+
+        if url_path != "":
+            return render_letter(url_path)
+
+
 
     @app.errorhandler(404)
     def page_not_found(e):
