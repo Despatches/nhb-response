@@ -71,8 +71,12 @@ def create_app():
         );        
     
     print("basic function")
+
     @app.route('/intro')
     def intro():
+
+        lit_motive_path = "sections/litigation_motive"
+
         components = [
             {
                 "id": "intro",
@@ -82,20 +86,45 @@ def create_app():
                     {
                         "id": "intro_sub1", "label": "Background","dynamic" : "sections/background.jinja",
                     },
-                    {"id": "intro_sub2", "label": "Purpose"},
-                     {
+                    {
+                        "id": "intro_sub2", 
+                        "label": "Purpose"
+                    },
+                    {
                         "label" :"Farmhouse Title Facts",
                         "id" : "fhouse_title_facts",
                         "dynamic" : "sections/fhouse_title_facts.jinja",
                         #"lit_exhibit" : True,
                     },
-                    {
-                        "label" :"NHB Litigation Motive",
-                        "id" : "litigation_motive",
-                        "dynamic" : "sections/litigation_motive.jinja",
-                        #"lit_exhibit" : True,
-                    },
                 ]
+            },
+            {
+                "label" :"NHB Litigation Motive",
+                "id" : "litigation_motive",
+                "dynamic" : f"{lit_motive_path}/litigation_motive.jinja",
+                "subsections": [
+                    {
+                        "id" : "accusation",
+                        "label" : "Accusation",
+                        "dynamic" : f"{lit_motive_path}/accusation.jinja",
+                    },
+                    {
+                        "id" : "fiction",
+                        "label" : "Fiction",
+                        "dynamic" : f"{lit_motive_path}/fiction.jinja",
+                    },
+                    {
+                        "id" : "fact",
+                        "label" : "Fact",
+                        "dynamic" : f"{lit_motive_path}/fact.jinja",
+                    },
+                    {
+                        "id" : "realities",
+                        "label" : "Realities",
+                        "dynamic" : f"{lit_motive_path}/realities.jinja",
+                    }
+                ]
+                #"lit_exhibit" : True,
             },
              {
                 "label" :"NHB Disclosure",
