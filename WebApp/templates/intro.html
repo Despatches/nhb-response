@@ -18,6 +18,25 @@
 </div>
 {% endmacro %}
 
+{% macro exhibit_header(rows) %}
+  {% for row in rows %}
+    {% if not loop.first %}
+      <div style="height: 4px;"></div>
+    {% endif %}
+    <table class="exhibit-header" width="100%" cellspacing="0" cellpadding="4" border="1">
+      <tr>
+        {% set col_width = (100 / (row|length * 2))|int %}
+        {% for pair in row %}
+          <td width="{{ col_width }}%"><strong>{{ pair[0] }}</strong></td>
+          <td width="{{ col_width }}%">{{ pair[1] }}</td>
+        {% endfor %}
+      </tr>
+    </table>
+  {% endfor %}
+{% endmacro %}
+
+
+
 {% macro risk_itinerary(
     figure_ref = None,
     Item_spec = None,

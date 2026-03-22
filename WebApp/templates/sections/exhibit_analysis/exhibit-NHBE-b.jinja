@@ -1,35 +1,94 @@
+{# ============================================================
+   EXHIBIT NHBE-b  |  Defence Case File
+   ============================================================ #}
 
-<p>
-	Exhibit is taken from a similar or the same position as Exhibit NHBE-a however the focus is instead in a more south-east-east direction down the right of way enjoyed by {{ FFH }} which forms the main access to the property.
-</p>
-<br>
-<p>
-	The image does not seem to highlight any significant features that were not present in NHBE-a however does show that the items described in NHBE-a are not infringing upon the track and do not restrict it's access in such a way as to cause a nuisance.
-	<br>
-	Observations competing against the likelihood of a nuisance;
-	<ol type="i">
-		<li>
-			width of the track is not obstructed in any way
-		</li>
-		<li>
-			the surface and condition of the farm access track is consistent with its functional character and performance requirement, 
-		</li>
-		<li>
-			the width of the track is at all times wider than each narrow constrained section of access track West of {{ FF }} over which the {{ FFHO }} passes to reach {{ FFH }},
-		</li>
-		<li>
-			there are NO other discernable elements in the photograph Exhibit NHBE-b that could even ambitiously with the greatest creative license imaginable be concluded to found a claim of nuisance,
-		</li>
-		<li>
-			 given the primative nature of technology and sociatal lack of empathy in conjunction with the many unfathomable mysteries of our great universe it is maybe possible there may be something invisible causing a nuisance that only magic people can see? 
-	<br>
-			 Or maybe this allegation is , (in the words of Mr Tumnus from "The Lion the Witch and the Wardrobe", or maybe it was "Wimbledon") "Absolutely bollox!" Maybe it is as simple as; the claimant is devious shit driven by a corrupted addiction to greed fuelled by a practiced appetite for committing fraud and deceeption for financial gain. 
-	<br>
-			 Mr Julian Genfell King's finger print are all over this!
-		</li>
-	</ol>
-</p>
-<br>
-<p>
-	Annual hedge growth subsquent to the breeding season  on the edge of the track is visible on the right of way however gauging an exact width of the accessible path is difficult from the image.
-</p>
+{% set gridded = "<strong>NHBE-b-gridded</strong>" %}
+
+<div class="exhibit-wrapper">
+
+  {# ── EXHIBIT HEADER ─────────────────────────────────────── #}
+  {{ exhibit_header([
+      [["Exhibit Reference", "NHBE-b"],       ["Associated Gridded Reference", "NHBE-b-gridded"]],
+      [["Subject Property",  FF],             ["Claimant / Neighbouring Holding", FFH]],
+  ]) }}
+
+  {# ── IMAGE OVERVIEW ─────────────────────────────────────── #}
+  <div class="section">
+    <h3>Image Overview</h3>
+
+    {{ rotate_90 }}
+
+    <p>
+      The exhibit is taken from a similar or the same position as Exhibit NHBE-a,
+      however the focus is instead in a more south-south-easterly direction down
+      the right of way enjoyed by {{ FFH }}, which forms the main access to the property.
+    </p>
+    <p>
+      The image does not appear to highlight any significant features that were not
+      present in NHBE-a; however it does show that the items described in NHBE-a
+      are not infringing upon the track and do not restrict its access in such a
+      way as to cause a nuisance.
+    </p>
+    <p>
+      For clarity, grid references as displayed on {{gridded}} may be used
+      when identifying the items described below.
+    </p>
+  </div>
+
+  {# ── EXHIBIT ITEMS ───────────────────────────────────────── #}
+  <div class="exhibit-items-row">
+
+    {# ── ITEM 1 — CONDITION AND DIMENSIONS OF THE RIGHT OF WAY ─ #}
+    <div class="section exhibit-item">
+      <h3>Item 1 &mdash; Condition and Dimensions of the Right of Way</h3>
+
+      <table class="item-meta" width="100%" cellspacing="0" cellpadding="3" border="1">
+        <tr>
+          <td width="30%"><strong>Grid Reference ({{gridded}})</strong></td>
+          <td><i>Full extent of image</i></td>
+        </tr>
+        <tr>
+          <td><strong>Location in Image</strong></td>
+          <td>The full width and extent of the access track as visible along its south-south-easterly axis</td>
+        </tr>
+      </table>
+
+      <table class="item-section">
+        <tr><th>Description</th></tr>
+        <tr><td>
+          <p>
+            Annual hedge growth subsequent to the breeding season on the edge of the
+            track is visible on the right of way; however, gauging an exact width of
+            the accessible path is difficult from the image.
+          </p>
+        </td></tr>
+      </table>
+
+      <table class="item-section">
+        <tr><th>Defence Response to Claims Made</th></tr>
+        <tr><td>
+          <ol type="i">
+            <li>
+              The width of the track is not obstructed in any way.
+            </li>
+            <li>
+              The surface and condition of the farm access track is consistent with
+              its functional character and performance requirement.
+            </li>
+            <li>
+              The width of the track is at all times wider than each narrow constrained
+              section of access track west of {{ FF }} over which {{ FFHO }} passes
+              to reach {{ FFH }}.
+            </li>
+            <li>
+              There are no other discernible elements in Exhibit NHBE-b that could
+              found a claim of nuisance.
+            </li>
+          </ol>
+        </td></tr>
+      </table>
+    </div>
+
+  </div>{# ── end exhibit-items-row ───────────────────────────── #}
+
+</div>
