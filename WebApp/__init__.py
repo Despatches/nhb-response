@@ -280,6 +280,12 @@ def create_app():
                 "subsections": []
             },
             {
+                "id": "review_manipulation",
+                "label": "Review Manipulation",
+                "dynamic" : "sections/review_buying/basic.jinja",
+                "subsections": []
+            },
+            {
                 "id": "conclusion",
                 "subsections": []
             },
