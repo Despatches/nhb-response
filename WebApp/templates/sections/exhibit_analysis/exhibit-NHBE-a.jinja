@@ -4,23 +4,14 @@
 
 {% set gridded = "<strong>NHBE-a-gridded</strong>" %}
 
+
 <div class="exhibit-wrapper">
 
   {# ── EXHIBIT HEADER ─────────────────────────────────────── #}
-  <table class="exhibit-header" width="100%" cellspacing="0" cellpadding="4" border="1">
-    <tr>
-      <td width="25%"><strong>Exhibit Reference</strong></td>
-      <td width="25%">NHBE-a</td>
-      <td width="25%"><strong>Associated Gridded Reference</strong></td>
-      <td width="25%">NHBE-a-gridded</td>
-    </tr>
-    <tr>
-      <td><strong>Subject Property</strong></td>
-      <td>{{ FF }}</td>
-      <td><strong>Claimant / Neighbouring Holding</strong></td>
-      <td>{{ FFH }}</td>
-    </tr>
-  </table>
+  {{ exhibit_header([
+      [["Exhibit Reference", "NHBE-a"],       ["Associated Gridded Reference", "NHBE-a-gridded"]],
+      [["Subject Property",  FF],             ["Claimant / Neighbouring Holding", FFH]],
+  ]) }}
 
   {# ── IMAGE OVERVIEW ─────────────────────────────────────── #}
   <div class="section">
@@ -40,281 +31,317 @@
     </p>
   </div>
 
-  {# ── ITEM 1 — DELIVERY SIGN MATERIAL ───────────────────── #}
-  <div class="section exhibit-item">
-    <h3>Item 1 &mdash; Delivery Sign Material</h3>
+  {# ── EXHIBIT ITEMS ───────────────────────────────────────── #}
+  <div class="exhibit-items-row">
 
-    <table class="item-meta" width="100%" cellspacing="0" cellpadding="3" border="1">
-      <tr>
-        <td width="30%"><strong>Grid Reference ({{gridded}})</strong></td>
-        <td><i>H8&ndash;J9</i></td>
-      </tr>
-      <tr>
-        <td><strong>Location in Image</strong></td>
-        <td>Bottom-left foreground</td>
-      </tr>
-    </table>
+    {# ── ITEM 1 — DELIVERY SIGN MATERIAL ───────────────────── #}
+    <div class="section exhibit-item">
+      <h3>Item 1 &mdash; Delivery Sign Material</h3>
 
-    <h4>Description</h4>
-    <p>
-      Wooden material is visible in the bottom-left foreground of the image.
-      Had the image been taken from a position several steps further back along
-      the access track, this material would have been identifiable as part of a
-      sign directing deliveries destined for {{ FF }}.
-    </p>
+      <table class="item-meta" width="100%" cellspacing="0" cellpadding="3" border="1">
+        <tr>
+          <td width="30%"><strong>Grid Reference ({{gridded}})</strong></td>
+          <td><i>H8&ndash;J9</i></td>
+        </tr>
+        <tr>
+          <td><strong>Location in Image</strong></td>
+          <td>Bottom-left foreground</td>
+        </tr>
+      </table>
 
-    <h4>Defence Response to Claims Made</h4>
-    <ol>
-      <li>
-        <strong>Health and safety risk:</strong>
-        It is not established how a delivery sign, functionally necessary to {{ FF }},
-        constitutes a risk to the health and safety of the public.
-      </li>
-      <li>
-        <strong>Nuisance:</strong>
-        It has not been demonstrated how this item causes {{ FFH }} a nuisance.
-      </li>
-      <li>
-        <strong>Unsightliness:</strong>
-        The item's functional requirement to {{ FF }} renders any aesthetic
-        characterisation irrelevant; in any event the term &ldquo;unsightly&rdquo;
-        is inherently subjective.
-      </li>
-    </ol>
-  </div>
+      <table class="item-section">
+        <tr><th>Description</th></tr>
+        <tr><td>
+          <p>
+            Wooden material is visible in the bottom-left foreground of the image.
+            Had the image been taken from a position several steps further back along
+            the access track, this material would have been identifiable as part of a
+            sign directing deliveries destined for {{ FF }}.
+          </p>
+        </td></tr>
+      </table>
 
-  {# ── ITEM 2 — RECLAIMED HARDWOOD TIMBER ────────────────── #}
-  <div class="section exhibit-item">
-    <h3>Item 2 &mdash; Reclaimed Hardwood Timber</h3>
+      <table class="item-section">
+        <tr><th>Defence Response to Claims Made</th></tr>
+        <tr><td>
+          <ol>
+            <li>
+              <strong>Health and safety risk:</strong>
+              It is not established how a delivery sign, functionally necessary to {{ FF }},
+              constitutes a risk to the health and safety of the public.
+            </li>
+            <li>
+              <strong>Nuisance:</strong>
+              It has not been demonstrated how this item causes {{ FFH }} a nuisance.
+            </li>
+            <li>
+              <strong>Unsightliness:</strong>
+              The item's functional requirement to {{ FF }} renders any aesthetic
+              characterisation irrelevant; in any event the term &ldquo;unsightly&rdquo;
+              is inherently subjective.
+            </li>
+          </ol>
+        </td></tr>
+      </table>
+    </div>
 
-    <table class="item-meta" width="100%" cellspacing="0" cellpadding="3" border="1">
-      <tr>
-        <td width="30%"><strong>Grid Reference ({{gridded}})</strong></td>
-        <td><i>F3&ndash;F4</i></td>
-      </tr>
-      <tr>
-        <td><strong>Location in Image</strong></td>
-        <td>Approximately three-fifths down from the top, stored under the red dogwood bush</td>
-      </tr>
-    </table>
+    {# ── ITEM 2 — RECLAIMED HARDWOOD TIMBER ────────────────── #}
+    <div class="section exhibit-item">
+      <h3>Item 2 &mdash; Reclaimed Hardwood Timber</h3>
 
-    <h4>Description</h4>
-    <p>
-      A stack of small-section timber is visible at the far edge of the image.
-      The timber is tropical hardwood, salvaged by carefully de-nailing pallets
-      previously used to transport stone paving.
-      The resulting batons are retained for general use on the holding.
-      The hardwood's inherent resistance to rot makes outdoor storage unproblematic,
-      and the timber is stored discretely beneath the red dogwood bush.
-    </p>
-    <p>
-      The timber is located at the junction of two private tracks, both owned
-      by {{ FF }}: the track over which {{ FFH }} holds no right of way, and
-      the track over which {{ FFH }} does hold a right of way.
-    </p>
+      <table class="item-meta" width="100%" cellspacing="0" cellpadding="3" border="1">
+        <tr>
+          <td width="30%"><strong>Grid Reference ({{gridded}})</strong></td>
+          <td><i>F3&ndash;F4</i></td>
+        </tr>
+        <tr>
+          <td><strong>Location in Image</strong></td>
+          <td>Approximately three-fifths down from the top, stored under the red dogwood bush</td>
+        </tr>
+      </table>
 
-    <h4>Defence Response to Claims Made</h4>
-    <ol>
-      <li>
-        <strong>Nuisance:</strong>
-        The timber is at no point situated on the right of way enjoyed by {{ FFH }}.
-        It is therefore difficult to understand in what manner it causes a nuisance,
-        and a specific reasoned basis will be required if any such claim is to be sustained.
-      </li>
-      <li>
-        <strong>Unsightliness:</strong>
-        The timber is located outside the boundaries of the {{ FFH }} title and is
-        only visible from its right of way — a right of access, not a right to a view.
-        The claim of unsightliness is further undermined by:
-        <ol type="a">
-          <li>the inherently subjective nature of the term;</li>
-          <li>
-            the timber's status as potentially useful reclaimed material with a
-            further working life ahead of it; and
-          </li>
-          <li>
-            the fact that it falls outside the visual envelope of the {{ FFH }} title itself.
-          </li>
-        </ol>
-        Had a specific and legitimate concern been raised regarding this item,
-        {{ FF }} could have considered its relocation at its discretion; however:
-        <ol type="i">
-          <li>{{ FF }} is under no obligation to do so;</li>
-          <li>
-            it appears that any visible location would be considered objectionable
-            by a representative of {{ NHB }}, making the standard imposed unreasonable; and
-          </li>
-          <li>
-            no compelling reason has been advanced as to why relocation to a less
-            convenient position would be necessary or proportionate.
-          </li>
-        </ol>
-      </li>
-      <li>
-        <strong>Health and safety risk:</strong>
-        It has not been demonstrated how stacked reclaimed timber constitutes a
-        risk to the public.
-      </li>
-      <li>
-        <strong>Pre-existing status:</strong>
-        The timber was in situ prior to {{ HNB }}'s purchase of {{ FFH }}.
-        It is therefore presumed that any concerns regarding its status as a
-        nuisance or health and safety risk would have been raised during conveyance,
-        and {{ NHB }} should be in a position to provide evidence of this.
-      </li>
-    </ol>
-  </div>
+      <table class="item-section">
+        <tr><th>Description</th></tr>
+        <tr><td>
+          <p>
+            A stack of small-section timber is visible at the far edge of the image.
+            The timber is tropical hardwood, salvaged by carefully de-nailing pallets
+            previously used to transport stone paving.
+            The resulting batons are retained for general use on the holding.
+            The hardwood's inherent resistance to rot makes outdoor storage unproblematic,
+            and the timber is stored discretely beneath the red dogwood bush.
+          </p>
+          <p>
+            The timber is located at the junction of two private tracks, both owned
+            by {{ FF }}: the track over which {{ FFH }} holds no right of way, and
+            the track over which {{ FFH }} does hold a right of way.
+          </p>
+        </td></tr>
+      </table>
 
-  {# ── ITEM 3 — WOODEN PALLET AND PLASTIC BARREL ─────────── #}
-  <div class="section exhibit-item">
-    <h3>Item 3 &mdash; Wooden Pallet and Plastic Barrel</h3>
+      <table class="item-section">
+        <tr><th>Defence Response to Claims Made</th></tr>
+        <tr><td>
+          <ol>
+            <li>
+              <strong>Nuisance:</strong>
+              The timber is at no point situated on the right of way enjoyed by {{ FFH }}.
+              It is therefore difficult to understand in what manner it causes a nuisance,
+              and a specific reasoned basis will be required if any such claim is to be sustained.
+            </li>
+            <li>
+              <strong>Unsightliness:</strong>
+              The timber is located outside the boundaries of the {{ FFH }} title and is
+              only visible from its right of way — a right of access, not a right to a view.
+              The claim of unsightliness is further undermined by:
+              <ol type="a">
+                <li>the inherently subjective nature of the term;</li>
+                <li>
+                  the timber's status as potentially useful reclaimed material with a
+                  further working life ahead of it; and
+                </li>
+                <li>
+                  the fact that it falls outside the visual envelope of the {{ FFH }} title itself.
+                </li>
+              </ol>
+              Had a specific and legitimate concern been raised regarding this item,
+              {{ FF }} could have considered its relocation at its discretion; however:
+              <ol type="i">
+                <li>{{ FF }} is under no obligation to do so;</li>
+                <li>
+                  it appears that any visible location would be considered objectionable
+                  by a representative of {{ NHB }}, making the standard imposed unreasonable; and
+                </li>
+                <li>
+                  no compelling reason has been advanced as to why relocation to a less
+                  convenient position would be necessary or proportionate.
+                </li>
+              </ol>
+            </li>
+            <li>
+              <strong>Health and safety risk:</strong>
+              It has not been demonstrated how stacked reclaimed timber constitutes a
+              risk to the public.
+            </li>
+            <li>
+              <strong>Pre-existing status:</strong>
+              The timber was in situ prior to {{ HNB }}'s purchase of {{ FFH }}.
+              It is therefore presumed that any concerns regarding its status as a
+              nuisance or health and safety risk would have been raised during conveyance,
+              and {{ NHB }} should be in a position to provide evidence of this.
+            </li>
+          </ol>
+        </td></tr>
+      </table>
+    </div>
 
-    <table class="item-meta" width="100%" cellspacing="0" cellpadding="3" border="1">
-      <tr>
-        <td width="30%"><strong>Grid Reference ({{gridded}})</strong></td>
-        <td><i>F4&ndash;G5</i></td>
-      </tr>
-      <tr>
-        <td><strong>Location in Image</strong></td>
-        <td>
-          Approximately three-fifths down from the top and one-fifth in from
-          the right; approximately 2&nbsp;metres from the edge of the right of way
-          enjoyed by {{ FFHO }}
-        </td>
-      </tr>
-    </table>
+    {# ── ITEM 3 — WOODEN PALLET AND PLASTIC BARREL ─────────── #}
+    <div class="section exhibit-item">
+      <h3>Item 3 &mdash; Wooden Pallet and Plastic Barrel</h3>
 
-    <h4>Description</h4>
-    <p>
-      A wooden pallet is leaned against an empty red 25-litre plastic barrel.
-      The barrel is largely obscured by the pallet, which rests against it at
-      an angle of approximately 70&deg; (from the recollection of {{ OH }} and
-      {{ EH }}).
-      Together these items serve an operational function, forming a barrier
-      that restricts access down the track which forms the predominant subject
-      of the image.
-    </p>
+      <table class="item-meta" width="100%" cellspacing="0" cellpadding="3" border="1">
+        <tr>
+          <td width="30%"><strong>Grid Reference ({{gridded}})</strong></td>
+          <td><i>F4&ndash;G5</i></td>
+        </tr>
+        <tr>
+          <td><strong>Location in Image</strong></td>
+          <td>
+            Approximately three-fifths down from the top and one-fifth in from
+            the right; approximately 2&nbsp;metres from the edge of the right of way
+            enjoyed by {{ FFHO }}
+          </td>
+        </tr>
+      </table>
 
-    {# TODO: Confirm correct pallet designation before filing — "Euro-Pallet" or equivalent standard #}
+      <table class="item-section">
+        <tr><th>Description</th></tr>
+        <tr><td>
+          <p>
+            A wooden pallet is leaned against an empty red 25-litre plastic barrel.
+            The barrel is largely obscured by the pallet, which rests against it at
+            an angle of approximately 70&deg; (from the recollection of {{ OH }} and
+            {{ EH }}).
+            Together these items serve an operational function, forming a barrier
+            that restricts access down the track which forms the predominant subject
+            of the image.
+          </p>
+          {# TODO: Confirm correct pallet designation before filing — "Euro-Pallet" or equivalent standard #}
+        </td></tr>
+      </table>
 
-    <h4>Defence Response to Claims Made</h4>
-    <ol>
-      <li>
-        <strong>Obstruction of access:</strong>
-        The items are positioned approximately 2&nbsp;metres from the edge of
-        {{ FFHO }}'s right of way and do not prevent lawful access along that route.
-      </li>
-      <li>
-        <strong>Health and safety risk:</strong>
-        It is not clear how these items present a risk to public health and safety:
-        <ol type="a">
-          <li>
-            The pallet's position is stable and unlikely to become dislodged
-            in a manner capable of causing injury.
-          </li>
-          <li>
-            The pallet is of lightweight construction — notably lighter than
-            a standard Euro-Pallet — and would be unlikely to cause injury
-            were it to become dislodged.
-          </li>
-          <li>
-            The distance of approximately 2&nbsp;metres from the right of way
-            and bridleway is sufficient to prevent accidental interference
-            with the items.
-          </li>
-        </ol>
-      </li>
-      <li>
-        <strong>Nuisance:</strong>
-        It is not apparent how these items constitute a nuisance.
-        Once within the confines of {{ FFH }}, occupants would be unable
-        to hear or smell them, nor do they impinge upon any right enjoyed
-        by the owners or occupiers of {{ FFH }}.
-      </li>
-      <li>
-        <strong>Unsightliness:</strong>
-        The items are not objectively unsightly: the red plastic of the barrel
-        is obscured by the natural, faded wood colour of the pallet.
-        This assessment is in any event subjective and does not alter the
-        operational purpose the items serve.
-      </li>
-    </ol>
-  </div>
+      <table class="item-section">
+        <tr><th>Defence Response to Claims Made</th></tr>
+        <tr><td>
+          <ol>
+            <li>
+              <strong>Obstruction of access:</strong>
+              The items are positioned approximately 2&nbsp;metres from the edge of
+              {{ FFHO }}'s right of way and do not prevent lawful access along that route.
+            </li>
+            <li>
+              <strong>Health and safety risk:</strong>
+              It is not clear how these items present a risk to public health and safety:
+              <ol type="a">
+                <li>
+                  The pallet's position is stable and unlikely to become dislodged
+                  in a manner capable of causing injury.
+                </li>
+                <li>
+                  The pallet is of lightweight construction — notably lighter than
+                  a standard Euro-Pallet — and would be unlikely to cause injury
+                  were it to become dislodged.
+                </li>
+                <li>
+                  The distance of approximately 2&nbsp;metres from the right of way
+                  and bridleway is sufficient to prevent accidental interference
+                  with the items.
+                </li>
+              </ol>
+            </li>
+            <li>
+              <strong>Nuisance:</strong>
+              It is not apparent how these items constitute a nuisance.
+              Once within the confines of {{ FFH }}, occupants would be unable
+              to hear or smell them, nor do they impinge upon any right enjoyed
+              by the owners or occupiers of {{ FFH }}.
+            </li>
+            <li>
+              <strong>Unsightliness:</strong>
+              The items are not objectively unsightly: the red plastic of the barrel
+              is obscured by the natural, faded wood colour of the pallet.
+              This assessment is in any event subjective and does not alter the
+              operational purpose the items serve.
+            </li>
+          </ol>
+        </td></tr>
+      </table>
+    </div>
 
-  {# ── ITEM 4 — DARK BLUE MITSUBISHI VEHICLE ─────────────── #}
-  <div class="section exhibit-item">
-    <h3>Item 4 &mdash; Dark Blue Mitsubishi Vehicle</h3>
+    {# ── ITEM 4 — DARK BLUE MITSUBISHI VEHICLE ─────────────── #}
+    <div class="section exhibit-item">
+      <h3>Item 4 &mdash; Dark Blue Mitsubishi Vehicle</h3>
 
-    <table class="item-meta" width="100%" cellspacing="0" cellpadding="3" border="1">
-      <tr>
-        <td width="30%"><strong>Grid Reference ({{gridded}})</strong></td>
-        <td><i>D5&ndash;E5</i></td>
-      </tr>
-      <tr>
-        <td><strong>Location in Image</strong></td>
-        <td>
-          Up and slightly left of Item 3; positioned at the entrance to the track
-          forming the principal subject of the image
-        </td>
-      </tr>
-    </table>
+      <table class="item-meta" width="100%" cellspacing="0" cellpadding="3" border="1">
+        <tr>
+          <td width="30%"><strong>Grid Reference ({{gridded}})</strong></td>
+          <td><i>D5&ndash;E5</i></td>
+        </tr>
+        <tr>
+          <td><strong>Location in Image</strong></td>
+          <td>
+            Up and slightly left of Item 3; positioned at the entrance to the track
+            forming the principal subject of the image
+          </td>
+        </tr>
+      </table>
 
-    <h4>Description</h4>
-    <p>
-      A dark blue Mitsubishi vehicle is positioned at the entrance to the track.
-      The following facts are material to any assessment of this vehicle:
-    </p>
-    <ol>
-      <li>The vehicle is fully operational and runs and drives in both high and low ratio gears.</li>
-      <li>The vehicle's brakes are fully operational and are maintained as required.</li>
-      <li>
-        The vehicle previously rolled over during off-road use, resulting in:
-        <ol type="a">
-          <li>a damaged front windscreen;</li>
-          <li>the dislodging and removal of some front cosmetic components; and</li>
-          <li>the loss of the rear-left window.</li>
-        </ol>
-      </li>
-      <li>
-        The vehicle does not hold an MOT and is not taxed, as it is used exclusively
-        on private property. It is inspected before each use.
-      </li>
-      <li>
-        During the summer of 2025 the vehicle was vandalised: fuel was removed from
-        the tank and the vehicle has since been awaiting repair at its current location
-        at the entrance to the track. When vehicular access to the yard behind is
-        required, the Mitsubishi is moved using another vehicle or tractor unit.
-        <strong>The vehicle is not abandoned</strong>, as asserted by {{ NHB }}.
-      </li>
-    </ol>
-    <p>
-      When not in active use moving materials around {{ FF }}, the vehicle is
-      routinely parked on the track that forms the main subject of NHBE-a,
-      serving as a more substantial barrier restricting unauthorised access to
-      the concrete yard to the rear.
-    </p>
+      <table class="item-section">
+        <tr><th>Description</th></tr>
+        <tr><td>
+          <p>
+            A dark blue Mitsubishi vehicle is positioned at the entrance to the track.
+            The following facts are material to any assessment of this vehicle:
+          </p>
+          <ol>
+            <li>The vehicle is fully operational and runs and drives in both high and low ratio gears.</li>
+            <li>The vehicle's brakes are fully operational and are maintained as required.</li>
+            <li>
+              The vehicle previously rolled over during off-road use, resulting in:
+              <ol type="a">
+                <li>a damaged front windscreen;</li>
+                <li>the dislodging and removal of some front cosmetic components; and</li>
+                <li>the loss of the rear-left window.</li>
+              </ol>
+            </li>
+            <li>
+              The vehicle does not hold an MOT and is not taxed, as it is used exclusively
+              on private property. It is inspected before each use.
+            </li>
+            <li>
+              During the summer of 2025 the vehicle was vandalised: fuel was removed from
+              the tank and the vehicle has since been awaiting repair at its current location
+              at the entrance to the track. When vehicular access to the yard behind is
+              required, the Mitsubishi is moved using another vehicle or tractor unit.
+              <strong>The vehicle is not abandoned</strong>, as asserted by {{ NHB }}.
+            </li>
+          </ol>
+          <p>
+            When not in active use moving materials around {{ FF }}, the vehicle is
+            routinely parked on the track that forms the main subject of NHBE-a,
+            serving as a more substantial barrier restricting unauthorised access to
+            the concrete yard to the rear.
+          </p>
+        </td></tr>
+      </table>
 
-    <h4>Defence Response to Claims Made</h4>
-    <ol>
-      <li>
-        <strong>Health and safety risk:</strong>
-        It has not been demonstrated how the vehicle presents a health and
-        safety risk to the public. It is operational, inspected before use,
-        and stored on private land not visible from the {{ FFH }} title.
-      </li>
-      <li>
-        <strong>Nuisance:</strong>
-        It has not been demonstrated in what capacity the vehicle constitutes
-        a nuisance.
-      </li>
-      <li>
-        <strong>Unsightliness / Abandonment:</strong>
-        The vehicle is an operational asset stored in a location not visible
-        from the {{ FFH }} title. Its cosmetic condition following an off-road
-        incident is not a relevant consideration for {{ NHB }}, and the
-        assertion that it has been abandoned is factually incorrect.
-      </li>
-    </ol>
-  </div>
+      <table class="item-section">
+        <tr><th>Defence Response to Claims Made</th></tr>
+        <tr><td>
+          <ol>
+            <li>
+              <strong>Health and safety risk:</strong>
+              It has not been demonstrated how the vehicle presents a health and
+              safety risk to the public. It is operational, inspected before use,
+              and stored on private land not visible from the {{ FFH }} title.
+            </li>
+            <li>
+              <strong>Nuisance:</strong>
+              It has not been demonstrated in what capacity the vehicle constitutes
+              a nuisance.
+            </li>
+            <li>
+              <strong>Unsightliness / Abandonment:</strong>
+              The vehicle is an operational asset stored in a location not visible
+              from the {{ FFH }} title. Its cosmetic condition following an off-road
+              incident is not a relevant consideration for {{ NHB }}, and the
+              assertion that it has been abandoned is factually incorrect.
+            </li>
+          </ol>
+        </td></tr>
+      </table>
+    </div>
+
+  </div>{# ── end exhibit-items-row ───────────────────────────── #}
 
 </div>

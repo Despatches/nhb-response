@@ -1,68 +1,178 @@
-<p>
-	{% set gridded = "<strong>NHBE-c-gridded</strong>" %}
-	Exhibit NHBE-c is an image taken pointing in an approximately westerly direction. The right hand side of the image in the lower quarter shows a portion of the access track which {{ FFH }} enjoys a right of way over.
-	<br>
-	<p> at the far extent of the view along the track (absolute position ref: <strong>NHBE-c-gridded</strong> <i>I-6</i> ) is parked a burgundy van type vehicle (exact make and model unclear) that is presumably operated by an actor working on behalf of {{ NHB }} in some capacity unknown. Following the strict interpretations laid down by {{ NHB }} this vehicle is causing an obstruction and a nuisance by parking on it's a right of way instead of using it for it's intended purpose to pass and re-pass.</p>
-	<br>
-	<p>Where the left hand side on the lower quarter depicts a concrete yard that forms part of {{ FF }}, the yard has a large amount of tall grass growing around it and at some places on it that from the given angle prevent viewing of the actual concrete that forms the basis of the yard</p>
-	
-</p>
-<br>
-<p>
-	approximately half way down the image a third in from the right in the foreground is an IBC although it is positioned in from the access track in a way as to prevent vehicles from entering onto the yard as is common practice
-</p>
-<ol>
-	<li>
-		{{ risk_itinerary(
-			"figure_ref",
-			"Item_spec",
-			"grid_ref"
-			) }}
-		<ol>
-			<li>
-				
-			</li>
-		</ol>
-		The nature and severity of risk identified by {{ NHB }}
-		<ul>
-			<li>
-				It does not infringe upon public access
-				The exhibit does not identify an IBC container that could be considered to infringe upon the farm track;
+{# ============================================================
+   EXHIBIT NHBE-c  |  Defence Case File
+   ============================================================ #}
 
-										<li>
-											eliminates rust and sharps throughout service life
-										</li>
-										<li>
-											spot-welded eliminates weakness, sharps and failures associated with bolts
-										</li>
-										<li>
-											round corners to all extrusions in fabrication to eliminate sharp corners
-										</li>
-										<li>
-											impat resistent design to accmodate impact without creating sharps and laceral injury
-										</li>
-									</ol>
-								</li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-							</ol>
-					</li>
-					consist of smooth rounded injection molded seamless metallic caging that are not seemingly an immediate hazard to anyone.
-				{# Picture Required #}
-				</ol>
-			</li>
-		</ul>
-	</li>
-	<li>
-		It is unclear in what capacity the IBC is a nuisance
-	</li>
-	<li>
-		It is unclear how a usable undamaged container on a concrete yard is waste materials
-	</li>
-</ol>
-<p>
-	{# TODO: flesh this out with proper reasoning #}
-	behind the previously described IBC is a white mercedes sprinter van outfitted with a chiller unit. The van has formally been used by {{ EH }} to transport prepared goods from farms operated by {{ EH }} to market.
-</p>
+{% set gridded = "<strong>NHBE-c-gridded</strong>" %}
+
+<div class="exhibit-wrapper">
+
+  {# ── EXHIBIT HEADER ─────────────────────────────────────── #}
+  {{ exhibit_header([
+      [["Exhibit Reference", "NHBE-c"],       ["Associated Gridded Reference", "NHBE-c-gridded"]],
+      [["Subject Property",  FF],             ["Claimant / Neighbouring Holding", FFH]],
+  ]) }}
+
+
+  {# ── IMAGE OVERVIEW ─────────────────────────────────────── #}
+  <div class="section">
+    <h3>Image Overview</h3>
+
+    {{ rotate_90 }}
+
+    <p>
+      An image taken pointing in an approximately westerly direction.
+      The right-hand side of the image in the lower quarter shows a portion of
+      the access track over which {{ FFH }} enjoys a right of way.
+      The left-hand side of the lower quarter depicts a concrete yard forming
+      part of {{ FF }}; the yard has a large amount of tall grass growing around
+      it and at some places on it, which from the given angle prevents viewing
+      of the actual concrete that forms the basis of the yard.
+    </p>
+    <p>
+      For clarity, grid references as displayed on {{gridded}} may be used
+      when identifying the items described below.
+    </p>
+  </div>
+
+  {# ── EXHIBIT ITEMS ───────────────────────────────────────── #}
+  <div class="exhibit-items-row">
+
+    {# ── ITEM 1 — BURGUNDY VAN ───────────────────────────────── #}
+    <div class="section exhibit-item">
+      <h3>Item 1 &mdash; Burgundy Van</h3>
+
+      <table class="item-meta" width="100%" cellspacing="0" cellpadding="3" border="1">
+        <tr>
+          <td width="30%"><strong>Grid Reference ({{gridded}})</strong></td>
+          <td><i>I6</i></td>
+        </tr>
+        <tr>
+          <td><strong>Location in Image</strong></td>
+          <td>Far extent of the view along the track</td>
+        </tr>
+      </table>
+
+      <table class="item-section">
+        <tr><th>Description</th></tr>
+        <tr><td>
+          <p>
+            A burgundy van-type vehicle (exact make and model unclear) is parked at the
+            far extent of the view along the track. The vehicle is presumably operated
+            by an actor working on behalf of {{ NHB }} in some capacity unknown.
+          </p>
+        </td></tr>
+      </table>
+
+      <table class="item-section">
+        <tr><th>Defence Response to Claims Made</th></tr>
+        <tr><td>
+          <ol>
+            <li>
+              <strong>Obstruction and nuisance:</strong>
+              Following the strict interpretation laid down by {{ NHB }}, this vehicle
+              is causing an obstruction and a nuisance by parking on the right of way
+              instead of using it for its intended purpose to pass and re-pass.
+            </li>
+          </ol>
+        </td></tr>
+      </table>
+    </div>
+
+    {# ── ITEM 2 — IBC CONTAINER ──────────────────────────────── #}
+    <div class="section exhibit-item">
+      <h3>Item 2 &mdash; IBC Container</h3>
+
+      <table class="item-meta" width="100%" cellspacing="0" cellpadding="3" border="1">
+        <tr>
+          <td width="30%"><strong>Grid Reference ({{gridded}})</strong></td>
+          <td><i>{# TODO: confirm grid reference #}</i></td>
+        </tr>
+        <tr>
+          <td><strong>Location in Image</strong></td>
+          <td>Approximately halfway down the image, one third in from the right, in the foreground</td>
+        </tr>
+      </table>
+
+      <table class="item-section">
+        <tr><th>Description</th></tr>
+        <tr><td>
+          <p>
+            An IBC container is positioned set back from the access track in a manner
+            that prevents vehicles from entering onto the yard, as is common practice.
+            IBC containers consist of smooth rounded injection-moulded seamless metallic
+            caging and are not seemingly an immediate hazard to anyone.
+            Their construction incorporates the following characteristics:
+          </p>
+          <ul>
+            <li>eliminates rust and sharps throughout service life;</li>
+            <li>spot-welded construction eliminates weaknesses, sharps, and failures associated with bolts;</li>
+            <li>round corners to all extrusions in fabrication to eliminate sharp corners;</li>
+            <li>impact-resistant design to accommodate impact without creating sharps and laceration injury.</li>
+          </ul>
+          {# Picture Required #}
+        </td></tr>
+      </table>
+
+      <table class="item-section">
+        <tr><th>Defence Response to Claims Made</th></tr>
+        <tr><td>
+          <ol>
+            <li>
+              <strong>Infringement upon public access:</strong>
+              The IBC is positioned in from the access track in a way as to prevent
+              vehicles from entering onto the yard, as is common practice. The exhibit
+              does not identify an IBC container that could be considered to infringe
+              upon the farm track.
+            </li>
+            <li>
+              <strong>Nuisance:</strong>
+              It is unclear in what capacity the IBC is a nuisance.
+            </li>
+            <li>
+              <strong>Waste material:</strong>
+              It is unclear how a usable, undamaged container on a concrete yard
+              constitutes waste material.
+            </li>
+          </ol>
+          {# TODO: flesh out Item 2 defence with further reasoning #}
+        </td></tr>
+      </table>
+    </div>
+
+    {# ── ITEM 3 — WHITE MERCEDES SPRINTER VAN ────────────────── #}
+    <div class="section exhibit-item">
+      <h3>Item 3 &mdash; White Mercedes Sprinter Van</h3>
+
+      <table class="item-meta" width="100%" cellspacing="0" cellpadding="3" border="1">
+        <tr>
+          <td width="30%"><strong>Grid Reference ({{gridded}})</strong></td>
+          <td><i>{# TODO: confirm grid reference #}</i></td>
+        </tr>
+        <tr>
+          <td><strong>Location in Image</strong></td>
+          <td>Behind Item 2 (the IBC container)</td>
+        </tr>
+      </table>
+
+      <table class="item-section">
+        <tr><th>Description</th></tr>
+        <tr><td>
+          <p>
+            A white Mercedes Sprinter van fitted with a chiller unit is visible behind
+            the IBC container described above. The van has formally been used by {{ EH }}
+            to transport prepared goods from farms operated by {{ EH }} to market.
+          </p>
+        </td></tr>
+      </table>
+
+      <table class="item-section">
+        <tr><th>Defence Response to Claims Made</th></tr>
+        <tr><td>
+          {# TODO: flesh this out with proper reasoning #}
+        </td></tr>
+      </table>
+    </div>
+
+  </div>{# ── end exhibit-items-row ───────────────────────────── #}
+
+</div>

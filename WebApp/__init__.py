@@ -1,11 +1,14 @@
 import os
 
-from flask import Flask, render_template
+from flask import Flask, render_template,Response
 
 from jinja2 import Template
 
 from .config import Config
 from .shorthand import shorts as shorthand_names
+
+from weasyprint import HTML, default_url_fetcher
+import mimetypes
 
 
 def create_app():
@@ -277,6 +280,12 @@ def create_app():
                 "subsections": []
             },
             {
+                "id": "review_manipulation",
+                "label": "Review Manipulation",
+                "dynamic" : "sections/review_buying/basic.jinja",
+                "subsections": []
+            },
+            {
                 "id": "conclusion",
                 "subsections": []
             },
@@ -324,6 +333,39 @@ def create_app():
 
         return render_with_terms('intro.html',components)
 
+    def make_url_fetcher(app):
+        def url_fetcher(url):
+
+            # catch both /static/ and http://127.0.0.1.../static/
+            if '/static/' in url:
+                static_part = url.split('/static/', 1)[1]
+                file_path = os.path.join(app.static_folder, static_part)
+                mime_type, _ = mimetypes.guess_type(file_path)
+                with open(file_path, 'rb') as f:
+                    return {
+                        'string': f.read(),
+                        'mime_type': mime_type or 'application/octet-stream',
+                    }
+
+            return default_url_fetcher(url)
+        return url_fetcher
+
+    @app.route('/print/intro')
+    def print_intro():
+        html_string = intro()
+
+        pdf = HTML(
+            string=html_string,
+            base_url='http://127.0.0.1:5000',
+            url_fetcher=make_url_fetcher(app)
+        ).write_pdf()
+
+        return Response(
+            pdf,
+            mimetype='application/pdf',
+            headers={'Content-Disposition': 'inline; filename=intro.pdf'}
+        )
+
     @app.route("/counterclaim")
     def counter_claim():
         components = [
@@ -339,6 +381,8 @@ def create_app():
     @app.route('/')
     def hello():
         return render_template('intro.html')
+
+
 
 
 

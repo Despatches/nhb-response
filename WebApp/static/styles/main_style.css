@@ -605,4 +605,42 @@ s
     }
 }
 
+  .exhibit-items-row {
+    display: block;
+  }
+  .exhibit-items-row .exhibit-item {
+    margin-bottom: 12px;
+  }
+  .item-section {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 4px;
+  }
+  .item-section th {
+    text-align: left;
+    background: #e8e8e8;
+    padding: 3px 4px;
+    border: 1px solid #000;
+    font-size: 1em;
+  }
+  .item-section td {
+    padding: 4px;
+    border: 1px solid #000;
+    vertical-align: top;
+  }
+  @media print {
+    @page { size: A4 portrait; margin: 10mm; }
+    @page landscape-items { size: A4 landscape; margin: 10mm; }
+    .exhibit-items-row {
+      page: landscape-items;
+      page-break-before: always;
+      page-break-after: always;
+    }
+    .exhibit-items-row .exhibit-item {
+      margin-bottom: 6px;
+      font-size: 0.78em;
+    }
+  }
+  
+
 
