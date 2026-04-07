@@ -7,8 +7,8 @@ from jinja2 import Template
 from .config import Config
 from .shorthand import shorts as shorthand_names
 
-from weasyprint import HTML, default_url_fetcher
-import mimetypes
+#from weasyprint import HTML, default_url_fetcher
+#import mimetypes
 
 
 def create_app():
