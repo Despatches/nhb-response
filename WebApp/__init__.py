@@ -404,6 +404,7 @@ def create_app():
             "facebook_request" : 'facebook/letter_facebook.jinja',
             "dsar_letter" : "facebook/dsar_letter.jinja",
             "listed_compliance" : 'defence/twbc/planning_enf_issues/twbc_listed_building_planning_enforcement.jinja',
+            "hjoad":"letters/hjoad.08_04_2026_harassment_iWebApp/templates/letters/hjoad.08_04_2026_harassment_i"
         }
 
         url_path = ""
