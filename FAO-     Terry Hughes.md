@@ -183,7 +183,8 @@ FAO  Head of Department: Community Safety Partnership,
 	8.1.3 if the complaint was submitted as a result of a threat or intimidation
 	8.1.4 if the person or persons accused of exhibiting conduct that was deemed to be a threat or intimidation were identified,
 
-9.1 Confirm whether the person submitting the complaint has been identified against at least two forms of identification that verify a current address and officially created ID (passport or driving license etc),
+9.0 There is a concern regarding the authenticity of complainant actor identities based upon cocnfirmed evidence of misrepresentation of malicious complainants via a number of now validated origins.
+9.1 Confirm whether the person submitting the complaint has been identified with at least two forms of identification that verify a current address and officially created ID (passport or driving license etc),
 9.2.Where TWBC has taken at face value any complaint provided by any employee of; NHB Invevstments Limited and  or Momentum Management Limited  and or National Homebuyers Limited  confirm that TWBC has first determined whether any officer or Directors has been convicted of repeated fraud misrepresentation in multiple (double figure for example over 30 ) counts of premeditated fraud. 
 9.3 Where hypothetically a company advancing multiple complaints is managed by a Director that has multiple convictions for Fraud and Misrepresentation what measures has TWBC taken to appraise the probability that the conduct of the company in relation to the complaints is unsafe.
 9.4 Where for example a company employs staff to act under sudonyms to adopt the persona of the public to submit complaints in order to create a false persona of public outrage and commplaint;
@@ -194,6 +195,23 @@ FAO  Head of Department: Community Safety Partnership,
 		9.4.3.b. abuse 
 		9.4.3.c. malicious defamation forming a pattern of harassment, 
 
+10.0 It is an established principle that parties with diagreements should seek to;  establish facts, advance proposals to resolve problems, seek asistance from mediating parties before escallating complaints and or launching litigation.  The Civil Procedure Rules CPR implemented by the Court system requires lawyers and parties to legal  dispute / litigation to engage with ADR / mediation. 
+10.1 The party now identified as NHB consisting of the related commpanies NHB Investments Limited , Momentum Management Ltd National Homebuyers Limited issued a complaint in the form  of a notification of "Letter of Claim" via ODT Solicitors which was acknowledged circa 6 months ago.
+	10.1.1 Specify the timeline of any alleged continuing complaint alleged by each complainant.
+10.2 Neither ODT Solicitors or NHB have acknowledged the respondent response to the NHB "Letter of Claim" which required confirmation of information and a rebuttle. 
+	10.2.1 Specify whether TWBC have yet received a copy of the NHB "Letter of Claim" issued by ODT Solicitors
+10.3 During a 6 month interval neither ODT Solicitors nor NHB have acknowleged an invitation to attend Mediation /ADR for which a mediator host has been contacted and terms agreed.
+	10.3.1 Confirm what administration has been conducted by TWBC to detrmine the efforts taken by NHB or any complainant to resolve any alleged complaint.
+10.4  ODT Solicitors and NHB are presently manifestly in breach of the Court Civil Procedure Rules by deliberately  refusing to acknowledge  invitation to medaition ADR.
+	10.4.1 Specify whether it is the objective of TWBC in light of a live "Letter of Claim" to circumvent the established Court Civil Procedure Rules by intervening with a complainant issue that can be resolved directly by the complainant submitting an application to the Court Service for Relief togethjer with evidence
+10.5  ODT Solicitors and NHB are presently manifestly in breach of the Court Civil Procedure Rules by issuing threats and notice of "Letter of Claim" strewn with malicious falsehoods that have no realistic prospect of success in a claim and amount to an "Abuse of Process",
+	10.5.1 Specify whether it is the intent of TWBC to act as alternative mechanism to CPR for a complainant that is by a matter of fact and degree not pursuing or adhearing to CPR in relation to an issued "Letter of Claim", 
+10.6 ODT Solicitors are presently manifestly in breach of the Solicitors Reglation Authority code of conduct that requires a solicitor is not to issue correspondence on behalf of a client where it is reasonably apparent that a notice of claim has no realistic prospect of success.
+
+10.7 In the foregoing TWBC are minded to consider the precarious notion of supporting the malicious claims and coercive conduct of the complainant and such allied complaints that have not been rigourously tested for provenance and clean motive.
+	10.7 Confirm the audit framework and assessment that has been applied to determine  the proberty of the complaint to date.
+
+11.0 
 
 2. ODT Solicitors acting for NHB
 
