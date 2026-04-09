@@ -21,89 +21,89 @@
 FAO  Head of Department: Community Safety Partnership,
 1.0 Documents indicate that Tunbridge Wells Borough Council  (hereinafter referred to as TWBC) department led by Terry Hughes and identified as a member or stakeholder of the Commmunity Safety Partnership has conducted detailed and protracted discussions with one or more actors employed by; A.1. NHB Investments Limited (hereinafter referred to as NHB)
 
-1.1 It is contended that employees of NHB Investments Limited have established a campaign incorporating untrue and defamatory representations that form part of a ; i. premeditated, ii. coordinated iii. repetitive iv. persistent, v. aggressive, and vi. malicious campaign of harassmment that stem from a financial speculation to acquire further property.
+	1.1 It is contended that employees of NHB Investments Limited have established a campaign incorporating untrue and defamatory representations that form part of a ; i. premeditated, ii. coordinated iii. repetitive iv. persistent, v. aggressive, and vi. malicious campaign of harassmment that stem from a financial speculation to acquire further property.
 
 1.2 It is understood that;
 
-1.2.1 allegations have been conveyed to officials at TWBC as part of the NHB campaign,
+	1.2.1 allegations have been conveyed to officials at TWBC as part of the NHB campaign,
 
-1.2.2 that documents and correspondence received by TWBC from NHB will have been preserved in accordance with a competent data management policy,
+	1.2.2 that documents and correspondence received by TWBC from NHB will have been preserved in accordance with a competent data management policy,
 
-1.2.3 that TWBC should in accordance with a competent regulatory and enforcement policy notiify any data subject (the correspondent) identified by a complainant ( NHB) of any complaint received that contains allegations or statements concerning the data subject,
+	1.2.3 that TWBC should in accordance with a competent regulatory and enforcement policy notiify any data subject (the correspondent) identified by a complainant ( NHB) of any complaint received that contains allegations or statements concerning the data subject,
 
-1.2.4	 that TWBC must have (in accordance with its obligations pursuant to the provisions adopted from the Hamptons Report) have applied a risk based appraisal of any complaint received before committing  resources to the allegation/s,
+	1.2.4	 that TWBC must have (in accordance with its obligations pursuant to the provisions adopted from the Hamptons Report) have applied a risk based appraisal of any complaint received before committing  resources to the allegation/s,
 
-1.2.5 that TWBC will have prepared a risk appraisal in relation to processing correspondence from NHB and preserved such fact based report in relation to the complaint prior to engaging resources to respond to a complaint by NHB,
+	1.2.5 that TWBC will have prepared a risk appraisal in relation to processing correspondence from NHB and preserved such fact based report in relation to the complaint prior to engaging resources to respond to a complaint by NHB,
 
-1.2.6 that an official named George Locke has been engaged in dialogue with NHB employees;
-1.2.6.1 that statements have been made by George Locke to one or more employees of NHB concerning one or more of the following ; 
+	1.2.6 that an official named George Locke has been engaged in dialogue with NHB employees;
+		1.2.6.1 that statements have been made by George Locke to one or more employees of NHB concerning one or more of the following ; 
 
-1.2.6.1.a.  Furnace Farm, 
+			1.2.6.1.a.  Furnace Farm, 
 
-1.2.6.1.b. business operating at Furnace Farm, 
+			1.2.6.1.b. business operating at Furnace Farm, 
 
-1.2.6.1.c. members of the Hume family,
+			1.2.6.1.c. members of the Hume family,
 
-1.2.6.1.d. operation or activity taking place at Furnace Farm,
+			1.2.6.1.d. operation or activity taking place at Furnace Farm,
 
-1.2.6.1.e. the legality or compliance of activity taking place at Furnace Farm,
+			1.2.6.1.e. the legality or compliance of activity taking place at Furnace Farm,
 
-1.2.6.1.f  the conduct or deportment of any business or person associated with Furnace Farm,
+			1.2.6.1.f  the conduct or deportment of any business or person associated with Furnace Farm,
 
-1.2.6.1.g. interaction that TWBC may have taken or propose to take with other state funded organisations in realtion to Furnace Farm,
+			1.2.6.1.g. interaction that TWBC may have taken or propose to take with other state funded organisations in realtion to Furnace Farm,
 
-1.2.6.1.h  actions and or administration that departments or individuals at TWBC have taken or propse to take in relation to Furnace Farm or parties associated thereto.
+			1.2.6.1.h  actions and or administration that departments or individuals at TWBC have taken or propse to take in relation to Furnace Farm or parties associated thereto.
 
 1.3 A communication is awaited that clearly explains TWBC conduct in relation to the foregoing sections of "1.2" to " 1.2.6.1.h " inclusive.
-1.3.1  In the event that TWBC is anable or unwilling to provide a response within the scope of 1.2 (and clauses thereto) a clear index has been provided to enable TWBC to reference efficiently and economically thoses components that shall not be engaged by a response together with the applicable exemption that is to be relied upon.
+	1.3.1  In the event that TWBC is anable or unwilling to provide a response within the scope of 1.2 (and clauses thereto) a clear index has been provided to enable TWBC to reference efficiently and economically thoses components that shall not be engaged by a response together with the applicable exemption that is to be relied upon.
 
 1.4 The status of each TWBC employee engaged in. dialogue and communications with NHB is sought and confirmation thereto awaited.
 
-1.4.1		Specify the role the TWBC emmployee fulfills ini relation to any engagement with NHB,
+	1.4.1		Specify the role the TWBC emmployee fulfills ini relation to any engagement with NHB,
 
 1.5  There is an percieved risk that TWBC could loose important documentation that may in future be required to scrutinse; conduct,  procedure, compliance, due diligence, integrity, motive, impartiality, objectivity, fairness , in addition to other characteristics of conduct that may need to be examined at a judicial review.
 
-1.5.1 Confirm that all logs, records in reltion to the following will now be protected from any deliberate and or accidental deletion or loss or desstruction:
+	1.5.1 Confirm that all logs, records in reltion to the following will now be protected from any deliberate and or accidental deletion or loss or desstruction:
 
-1.5.1.a departmental notes, 
+		1.5.1.a departmental notes, 
 
-1.5.1.b officials notebook and informal written , 
+		1.5.1.b officials notebook and informal written , 
 
-1.5.1.c official file notes, 
+		1.5.1.c official file notes, 
 
-1.5.1.d. internal communication records,
+		1.5.1.d. internal communication records,
 
-1.5.1.e. external communication records,
+		1.5.1.e. external communication records,
 
-1.5.1.f CMS entries, 
+		1.5.1.f CMS entries, 
 
-1.5.1.g verbal conversations, 
+		1.5.1.g verbal conversations, 
 
-1.5.1.h authorisations for actions and interventions, 
+		1.5.1.h authorisations for actions and interventions, 
 
-1.5.1.i surveillance and intelligence operations, 
+		1.5.1.i surveillance and intelligence operations, 
 
-1.5.1.j communications with official. bodies, 
+		1.5.1.j communications with official. bodies, 
 
-1.5.1.k web searches and downloads associated with an officials engagement,
- 
-1.5.1.l IP. addresses, 
+		1.5.1.k web searches and downloads associated with an officials engagement,
+		 
+		1.5.1.l IP. addresses, 
 
-1.5.1.m email addresses of document recipients, 
+		1.5.1.m email addresses of document recipients, 
 
-1.5.1.n logs of recipients of identifiable attachments, 
+		1.5.1.n logs of recipients of identifiable attachments, 
 
 1.5.2   It is apparent that meetings and or engagements have taken place and or been planned that coordinate personelle and or resources from more than one department and or field of designated duty be that within TWBC or in conjunction with external organisations.  
 
-1.5.2.1 where any communication has been handled by a TWBC employee of any status in any capacity concerning Furnace Farm (and related parties and activities)  as a participant to any document or communication exchanged or copied or accessed by any official in any capacity the follwing is required;
+	1.5.2.1 where any communication has been handled by a TWBC employee of any status in any capacity concerning Furnace Farm (and related parties and activities)  as a participant to any document or communication exchanged or copied or accessed by any official in any capacity the follwing is required;
 
-1.5.2.1.a date document accessed and or created and or relid upon (in each case the document has been handled),
+		1.5.2.1.a 	date document accessed and or created and or relid upon (in each case the document has been handled),
 
-1.5.2.1.b ID or permanent roll number or identifiier of the person that handled the document together with the date consulted on each occasion the document has been accessed,
+		1.5.2.1.b 	ID or permanent roll number or identifiier of the person that handled the document together with the date consulted on each occasion the document has been accessed,
 
-1.5.2.1.the location of the documnt and the document unique identifier and file path in the storage system to assist any disclosure request or order,
+		1.5.2.1.c.	the location of the documnt and the document unique identifier and file path in the storage system to assist any disclosure request or order,
 
-1.5.2.1. confirmation if the document can not be accessed and disclosd together with exemption or reason that would be applied for denying access to the document should a disclosue be submitted.
+		1.5.2.1.d 	confirmation if the document can not be accessed and disclosd together with exemption or reason that would be applied for denying access to the document should a disclosue be submitted.
 
 1.5.3   Specify the measures TWBC have in place to prevent the deletion of material that may be requied to be disclosed and in the alternative all documents associated with Furnace Farm in the context specified in the foregoing. 
 
@@ -187,27 +187,25 @@ FAO  Head of Department: Community Safety Partnership,
 9.2.Where TWBC has taken at face value any complaint provided by any employee of; NHB Invevstments Limited and  or Momentum Management Limited  and or National Homebuyers Limited  confirm that TWBC has first determined whether any officer or Directors has been convicted of repeated fraud misrepresentation in multiple (double figure for example over 30 ) counts of premeditated fraud. 
 9.3 Where hypothetically a company advancing multiple complaints is managed by a Director that has multiple convictions for Fraud and Misrepresentation what measures has TWBC taken to appraise the probability that the conduct of the company in relation to the complaints is unsafe.
 9.4 Where for example a company employs staff to act under sudonyms to adopt the persona of the public to submit complaints in order to create a false persona of public outrage and commplaint;
-9.4.1 specify what measures and protocols does TWBC have in place to expose succh a deceptive practice and make such deceipts known to a  person or persons prejudiced and harassed by such conduct,
-9.4.2 specify what  protocol exists to refer such conduct to a competent authority to investigate such condcut under the Protetion fromm Harassment Act  / PHA,
-9.4.3.	specify what protocols TWBC have in place to investigate and secure evidence of malicious conduct pursuent to apprehending harassment to identify online; 
-	9.4.3.a.  stalking 
-	9.4.3.b. abuse 
-	9.4.3.c. maliccious defamation forming a pattern of harassment, 
-
-
+	9.4.1 specify what measures and protocols does TWBC have in place to expose succh a deceptive practice and make such deceipts known to a  person or persons prejudiced and harassed by such conduct,
+	9.4.2 specify what  protocol exists to refer such conduct to a competent authority to investigate such condcut under the Protetion fromm Harassment Act  / PHA,
+	9.4.3.	specify what protocols TWBC have in place to investigate and secure evidence of malicious conduct pursuent to apprehending harassment to identify online; 
+		9.4.3.a.  stalking 
+		9.4.3.b. abuse 
+		9.4.3.c. malicious defamation forming a pattern of harassment, 
 
 
 2. ODT Solicitors acting for NHB
 
 2.1	ODT Solicitors of Haywards Heath NHB Investments Limited acting for NHB Investments Limited.
-2.1.1 Correspondence received from ODT Solicitors 3rd Quarter 2025.
-2.1.1.a Content including threatening and coercive and unfounded untrue and defamatory claims
-2.1.1.b Notice of "Letter of Claim" to be followed imminently by legal proceedings
-2.1.1.c No proceedings issued in breach of SRA code of conduct
-2.1.1.d No acknowledgement or response received from  ODT in response to respondent acknowledgement and request for disclosure,
-2.1.1.e No response to invitation to attent ADR with professional mediators (approved by TWBC) in breach of CPR,
-2.1.1.f No continuing commpliance with CPR and departure of communication protocol
-2.1.1.g Continuation of conduct amounting to harassment as specified by the PHA
+	2.1.1 Correspondence received from ODT Solicitors 3rd Quarter 2025.
+		2.1.1.a Content including threatening and coercive and unfounded untrue and defamatory claims
+		2.1.1.b Notice of "Letter of Claim" to be followed imminently by legal proceedings
+		2.1.1.c No proceedings issued in breach of SRA code of conduct
+		2.1.1.d No acknowledgement or response received from  ODT in response to respondent acknowledgement and request for disclosure,
+		2.1.1.e No response to invitation to attent ADR with professional mediators (approved by TWBC) in breach of CPR,
+		2.1.1.f No continuing commpliance with CPR and departure of communication protocol
+		2.1.1.g Continuation of conduct amounting to harassment as specified by the PHA
 
 
 3.Letter of Claim
