@@ -110,14 +110,22 @@ FAO  Head of Department: Community Safety Partnership,
 
 1.5 
 
-2. Documents Published in the Public Domain
+2. ODT Solicitors acting for NHB
 
-2.1	ODT Solicitors of Haywards Heath NHB Investments Limited
+2.1	ODT Solicitors of Haywards Heath NHB Investments Limited acting for NHB Investments Limited.
+2.1.1 Correspondence received from ODT Solicitors 3rd Quarter 2025.
+2.1.1.a Content including threatening and coercive and unfounded untrue and defamatory claims
+2.1.1.b Notice of "Letter of Claim" to be followed imminently by legal proceedings
+2.1.1.c No proceedings issued in breach of SRA code of conduct
+2.1.1.d No acknowledgement or response received from  ODT in response to respondent acknowledgement and request for disclosure,
+2.1.1.e No response to invitation to attent ADR with professional mediators (approved by TWBC) in breach of CPR,
+2.1.1.f No continuing commpliance with CPR and departure of communication protocol
+2.1.1.g Continuation of conduct amounting to harassment as specified by the PHA
 
 
 3.Letter of Claim
 
-3.1 
 
+Documents Published in the Public Domain
 
                
