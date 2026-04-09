@@ -51,7 +51,8 @@ FAO  Head of Department: Community Safety Partnership,
 
 1.2.6.1.h  actions and or administration that departments or individuals at TWBC have taken or propse to take in relation to Furnace Farm or parties associated thereto.
 
-1.3 A communication is awaited that clearly explains TWBC conduct in relation to the foregoing sections of 1.2 to 1.2.6.1.h inclusive.
+1.3 A communication is awaited that clearly explains TWBC conduct in relation to the foregoing sections of "1.2" to " 1.2.6.1.h " inclusive.
+1.3.1  In the event that TWBC is anable or unwilling to provide a response within the scope of 1.2 (and clauses thereto) a clear index has been provided to enable TWBC to reference efficiently and economically thoses components that shall not be engaged by a response together with the applicable exemption that is to be relied upon.
 
 1.4 The status of each TWBC employee engaged in. dialogue and communications with NHB is sought and confirmation thereto awaited.
 
